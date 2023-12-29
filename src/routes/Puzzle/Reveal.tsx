@@ -1,0 +1,84 @@
+import { Box, Container, Grid, Text } from '@chakra-ui/react';
+import { motion, useAnimate } from 'framer-motion';
+import { PropsWithChildren, useEffect } from 'react';
+import { Answer, Clue } from './types';
+
+type RevealProps = {
+  clue: Clue;
+  answer: Answer;
+  onComplete: () => void;
+};
+
+const Reveal: React.FC<RevealProps> = ({ clue, answer, onComplete }) => {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    if (clue.answer === answer.id) {
+      animate([
+        ['.reveal', { scale: 2, opacity: 0 }, { type: 'spring', at: 1 }],
+      ]).then(onComplete);
+    } else {
+      animate([
+        ['.reveal', { x: [0, 30, -30, 30, -30, 0] }, { type: 'spring', at: 1 }],
+      ]).then(onComplete);
+    }
+  }, [clue, answer, animate, onComplete]);
+
+  return (
+    <Grid ref={scope} pos="fixed" inset={0} placeContent="center" zIndex={10}>
+      <Container
+        className="reveal"
+        display="flex"
+        flexDirection="column"
+        w="lg"
+        gap={2}
+      >
+        <Candidate label="Clue" layoutId={`clue-${clue.id}`}>
+          {clue.clue}
+        </Candidate>
+        <Candidate label="Answer" layoutId={`answer-${answer.id}`}>
+          {answer.answer}
+        </Candidate>
+      </Container>
+    </Grid>
+  );
+};
+
+type CandidateProps = PropsWithChildren<{
+  label: string;
+  layoutId: string;
+}>;
+
+const Candidate: React.FC<CandidateProps> = ({ label, children, ...props }) => {
+  return (
+    <Box
+      as={motion.div}
+      px={4}
+      py={2}
+      rounded="md"
+      shadow="md"
+      bg="background.panel"
+      border="1px solid transparent"
+      borderColor="border.selected"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      textAlign="center"
+      {...props}
+    >
+      <Text
+        as="small"
+        display="block"
+        fontSize="sm"
+        textTransform="uppercase"
+        color="text.secondary"
+        letterSpacing="0.1em"
+      >
+        {label}
+      </Text>
+      <Text>{children}</Text>
+    </Box>
+  );
+};
+
+export default Reveal;

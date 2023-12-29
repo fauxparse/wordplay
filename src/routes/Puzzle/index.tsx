@@ -1,25 +1,11 @@
 import { Container, Heading, ListItem, Stack, Text } from '@chakra-ui/react';
-import { CSSProperties, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { CSSProperties, useEffect, useRef, useState } from 'react';
+import { puzzleRoute } from '..';
 import PickableList from './PickableList';
 import StickyHeading from './StickyHeading';
-import { puzzleRoute } from '..';
-
-export type Puzzle = {
-  year: string;
-  title: string;
-  description: string;
-  clues: Clue[];
-  answers: Answer[];
-};
-
-type Clue = {
-  clue: string;
-  answer: number;
-  description?: string;
-  credit?: string;
-};
-
-type Answer = string;
+import { Answer, Clue } from './types';
+import Reveal from './Reveal';
 
 const Puzzle: React.FC = () => {
   const { puzzle } = puzzleRoute.useLoaderData();
@@ -29,6 +15,22 @@ const Puzzle: React.FC = () => {
   const [selectedClue, setSelectedClue] = useState<Clue | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<Answer | null>(null);
   const [selectedAnswerHeight, setSelectedAnswerHeight] = useState(0);
+
+  const [revealing, setRevealing] = useState(false);
+
+  useEffect(() => {
+    if (selectedClue && selectedAnswer) {
+      setRevealing(true);
+    }
+  }, [selectedClue, selectedAnswer]);
+
+  const revealComplete = () => {
+    setRevealing(false);
+    setTimeout(() => {
+      setSelectedClue(null);
+      setSelectedAnswer(null);
+    }, 300);
+  };
 
   return (
     <Stack
@@ -67,21 +69,20 @@ const Puzzle: React.FC = () => {
           onSelect={setSelectedClue}
           onMeasure={setSelectedClueHeight}
         >
-          {(clue, i, { children, ...props }) => (
+          {(clue, _i, { children, sx, ...props }) => (
             <ListItem
+              as={motion.div}
+              layoutId={`clue-${clue.id}`}
+              layout="position"
               sx={{
-                "&[aria-selected='true']": {
-                  position: 'sticky',
-                  zIndex: 1,
-                  top: '3.5rem',
-                  bottom: 'calc(3.5rem + var(--selected-answer-height))',
-                  bg: 'background.panel',
-                  borderColor: 'border.selected',
-                },
+                ...sx,
+                '--sticky-top': '3.5rem',
+                '--sticky-bottom':
+                  'calc(3.5rem + var(--selected-answer-height))',
               }}
               {...props}
             >
-              <Text textAlign="right">{i + 1}</Text>
+              <Text textAlign="right">{clue.id}</Text>
               <Text>{clue.clue}</Text>
               {children}
             </ListItem>
@@ -99,26 +100,31 @@ const Puzzle: React.FC = () => {
           onSelect={setSelectedAnswer}
           onMeasure={setSelectedAnswerHeight}
         >
-          {(answer, i, { children, ...props }) => (
+          {(answer, _i, { children, sx, ...props }) => (
             <ListItem
+              as={motion.div}
+              layoutId={`answer-${answer.id}`}
+              layout="position"
               sx={{
-                "&[aria-selected='true']": {
-                  position: 'sticky',
-                  zIndex: 1,
-                  top: 'calc(7rem + var(--selected-clue-height))',
-                  bottom: '1rem',
-                  bg: 'background.panel',
-                  borderColor: 'border.selected',
-                },
+                ...sx,
+                '--sticky-top': 'calc(7rem + var(--selected-clue-height))',
+                '--sticky-bottom': '1rem',
               }}
               {...props}
             >
-              <Text textAlign="right">{i + 1}</Text>
-              <Text>{answer}</Text>
+              <Text textAlign="right">{answer.id}</Text>
+              <Text>{answer.answer}</Text>
               {children}
             </ListItem>
           )}
         </PickableList>
+        {revealing && selectedClue && selectedAnswer && (
+          <Reveal
+            clue={selectedClue}
+            answer={selectedAnswer}
+            onComplete={revealComplete}
+          />
+        )}
       </Container>
     </Stack>
   );

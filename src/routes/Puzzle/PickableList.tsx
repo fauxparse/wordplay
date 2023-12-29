@@ -1,5 +1,4 @@
 import {
-  BoxProps,
   IconButton,
   ListItemProps,
   ListProps,
@@ -62,7 +61,7 @@ const PickableList = <T,>({
   }, [selectedElement, onMeasure]);
 
   return (
-    <OrderedList ref={container} display="contents" {...props}>
+    <OrderedList ref={container} as="div" display="contents" {...props}>
       {items.map((item, index) =>
         children(item, index, {
           key: index,
@@ -76,6 +75,16 @@ const PickableList = <T,>({
           cursor: 'pointer',
           'aria-selected': item === selected,
           'data-index': index,
+          sx: {
+            "&[aria-selected='true']": {
+              position: 'sticky',
+              zIndex: 1,
+              top: 'var(--sticky-top)',
+              bottom: 'var(--sticky-bottom)',
+              bg: 'background.panel',
+              borderColor: 'border.selected',
+            },
+          },
           onClick: () => select(index),
           children: (
             <>

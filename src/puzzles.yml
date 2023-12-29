@@ -4,216 +4,341 @@
   title: Films
   description: Compiled from best film lists made by the BFI and Film4, in order of rank.
   clues:
-    - clue: Queer bandits doing the rounds
+    - id: 1
+      clue: Queer bandits doing the rounds
       answer: 33
       description: Queer = Bi, bandits = thieves, rounds – cycle.
       credit: Written by Marcie.
-    - clue: Excellent neckwear
+    - id: 2
+      clue: Excellent neckwear
       answer: 27
       description: Scarf/ace.
-    - clue: Hodor detects heart
+    - id: 3
+      clue: Hodor detects heart
       answer: 23
       description: hodOR DETects
-    - clue: Aqua Navy rose sadly
+    - id: 4
+      clue: Aqua Navy rose sadly
       answer: 57
       description: Aqua, Navy, Rose = colours. Sadly = blue
-    - clue: The CD doesn’t suck
+    - id: 5
+      clue: The CD doesn’t suck
       answer: 39
       description: Do you know your Roman numerals?
-    - clue: Every You Take
+    - id: 6
+      clue: Every You Take
       answer: 51
-    - clue: A pageant hitherto presented
+    - id: 7
+      clue: A pageant hitherto presented
       answer: 46
       description: A Night At The Opera Anagram of ‘A Pageant Hitherto’
-    - clue: Something
+    - id: 8
+      clue: Something
       answer: 73
       credit: A Marcie Fishwick special
-    - clue: TSHIENRGAIINN
+    - id: 9
+      clue: TSHIENRGAIINN
       answer: 19
       description: It’s the word SINGIN inside the THE RAIN.
-    - clue: Exhale Incorporated
+    - id: 10
+      clue: Exhale Incorporated
       answer: 35
       description: Sigh Co.
       credit: Courtesy of Kirsty
-    - clue: ‘Mr Gore, stop booing’ ‘No!’
+    - id: 11
+      clue: ‘Mr Gore, stop booing’ ‘No!’
       answer: 62
       description: Al jeers, Algiers? Close enough.
-    - clue: Suburban Tea Set
+    - id: 12
+      clue: Suburban Tea Set
       answer: 5
-    - clue: Anozira
+    - id: 13
+      clue: Anozira
       answer: 49
-    - clue: A hastier Jamaican
+    - id: 14
+      clue: A hastier Jamaican
       answer: 25
       description: Rasher Mon
-    - clue: Jumping after everyone else
+    - id: 15
+      clue: Jumping after everyone else
       answer: 15
       credit: From my dad.
-    - clue: Golf club is fine-ish
+    - id: 16
+      clue: Golf club is fine-ish
       answer: 31
       description: If it’s a bit like a fine, it’s tax-y.
-    - clue: Going out during Earth Hour
+    - id: 17
+      clue: Going out during Earth Hour
       answer: 34
-    - clue: Green villain, almost
+    - id: 18
+      clue: Green villain, almost
       answer: 1
       description: Green = Vert (in French), Villian = Iago
-    - clue: Quarter 34
+    - id: 19
+      clue: Quarter 34
       answer: 10
-    - clue: Finish a Pixar film
+    - id: 20
+      clue: Finish a Pixar film
       answer: 45
-    - clue: Thomas is replanting
+    - id: 21
+      clue: Thomas is replanting
       answer: 60
       description: Train’s potting
-    - clue: When Serena doesn’t feel like scoring
+    - id: 22
+      clue: When Serena doesn’t feel like scoring
       answer: 24
-    - clue: How George Bernard got his knife back
+    - id: 23
+      clue: How George Bernard got his knife back
       answer: 58
-    - clue: ‘Maybe I’m really really ordinary,’ Rachel starts
+    - id: 24
+      clue: ‘Maybe I’m really really ordinary,’ Rachel starts
       answer: 63
       description: Starts = Acronym of Maybe I’m Really Really Ordinary Rachel
-    - clue: Security! Security!
+    - id: 25
+      clue: Security! Security!
       answer: 16
-    - clue: Kim Kardashian’s child made a point
+    - id: 26
+      clue: Kim Kardashian’s child made a point
       answer: 4
       description: Trivial as long as you know Kim’s kid’s name.
-    - clue: A range of taxis
+    - id: 27
+      clue: A range of taxis
       answer: 43
       description: Cab Array. You’re welcome
-    - clue: Myth Mash
+    - id: 28
+      clue: Myth Mash
       answer: 14
-    - clue: River Warriors
+    - id: 29
+      clue: River Warriors
       answer: 71
       description: The Severn is one of the largest rivers in the UK. There’s also a Severn River in the Murray-Darling basin, so you really don’t have an excuse for not getting this.
-    - clue: All Roads
+    - id: 30
+      clue: All Roads
       answer: 68
       description: You know what they say about where all roads lead
-    - clue: Do maths as Snoop drops it
+    - id: 31
+      clue: Do maths as Snoop drops it
       answer: 42
       description: Sum Like It Hot
-    - clue: ...but knickers are healthy
+    - id: 32
+      clue: ...but knickers are healthy
       answer: 59
       description: Bra’s ill...
-    - clue: Past Facing
+    - id: 33
+      clue: Past Facing
       answer: 56
-    - clue: If Brandon Flowers transitions
+    - id: 34
+      clue: If Brandon Flowers transitions
       answer: 55
       description: Originally this was just going to be the names of the Killers in feminine forms, but that would probably have been too obscure
-    - clue: My regular client knows something’s up
+    - id: 35
+      clue: My regular client knows something’s up
       answer: 18
-    - clue: A♭
+    - id: 36
+      clue: A♭
       answer: 9
       description: A Flat
-    - clue: Miles Per Damage
+    - id: 37
+      clue: Miles Per Damage
       answer: 53
       description: Anagram of Miles Per
-    - clue: Shop Dog
+    - id: 38
+      clue: Shop Dog
       answer: 26
       description: Store Cur. Sorry.
-    - clue: This group of bowmen
+    - id: 39
+      clue: This group of bowmen
       answer: 7
       description: These/Archers
-    - clue: ...and praises The Man Who Fell To Earth
+    - id: 40
+      clue: ...and praises The Man Who Fell To Earth
       answer: 37
       description: RIP, David
-    - clue: Love at the Rivers’ bend
+    - id: 41
+      clue: Love at the Rivers’ bend
       answer: 9
       description: Hence the weird capitalisation of Rivers
-    - clue: Old Age Pensioner
+    - id: 42
+      clue: Old Age Pensioner
       answer: 2
       description: Cane/Kane.
       credit: Thank my mum for this one.
-    - clue: Toilet Ace
+    - id: 43
+      clue: Toilet Ace
       answer: 21
       description: Toilet = Lav, Ace Ventura
-    - clue: Pretend to be a herb
+    - id: 44
+      clue: Pretend to be a herb
       answer: 44
       description: Time/Thyme
-    - clue: This salmon ring is on fire
+    - id: 45
+      clue: This salmon ring is on fire
       answer: 65
       description: Pink Flaming O
-    - clue: Pier in Los Angeles
+    - id: 46
+      clue: Pier in Los Angeles
       answer: 61
-    - clue: A Level
+    - id: 47
+      clue: A Level
       answer: 6
-    - clue: Someone who has a handbag
+    - id: 48
+      clue: Someone who has a handbag
       answer: 17
       description: Purse Owner
-    - clue: ...the Mortal Closer
+    - id: 49
+      clue: ...the Mortal Closer
       answer: 22
-    - clue: The one we couldn’t be bothered to do
+    - id: 50
+      clue: The one we couldn’t be bothered to do
       answer: 36
   answers:
-    - Vertigo
-    - Citizen Kane
-    - The Apartment
-    - North by Northwest
-    - Chinatown
-    - All About Eve
-    - The Searchers
-    - "2001: A Space Odyssey"
-    - The Passion of Joan of Arc
-    - 8½
-    - Apocalypse Now
-    - Withnail & I
-    - One Flew Over The Cuckoo’s Nest
-    - Pulp Fiction
-    - Late Spring
-    - Double Indemnity
-    - Persona
-    - The Usual Suspects
-    - Singin’ in the Rain
-    - Touch of Evil
-    - L’avventura
-    - The Godfather
-    - Ordet
-    - In the Mood for Love
-    - Rashomon
-    - Stalker
-    - Scarface
-    - Mulholland Dr.
-    - The Terminator
-    - This Sporting Life
-    - Taxi Driver
-    - The Silence of the Lambs
-    - Bicycle Thieves
-    - City Lights
-    - Psycho
-    - Jeanne Dielman, 23 quai du Commerce 1080 Bruxelles
-    - Pan’s Labyrinth
-    - Fight Club
-    - The 400 Blows
-    - La dolce vita
-    - The Wizard of Oz
-    - Some Like It Hot
-    - Cabaret
-    - Play Time
-    - Close-up
-    - A Night At The Opera
-    - Shoah
-    - Donnie Darko
-    - Raising Arizona
-    - The Breakfast Club
-    - Breathless
-    - Fanny and Alexander
-    - Le Premis
-    - Metropolis
-    - The Ladykillers
-    - Back To The Future
-    - Three Colours Blue
-    - The Shawshank Redemption
-    - Brazil
-    - Trainspotting
-    - La Jetée
-    - The Battle of Algiers
-    - Mirror
-    - Tokyo Story
-    - Pink Flamingo
-    - Dawn of the Dead
-    - Princess Mononoke
-    - Journey to Italy
-    - Secrets & Lies
-    - This is Spinal Tap
-    - The Seven Samurai
-    - Alien
-    - The General
-    - Man with a Movie Camera
-    - "Sunrise: A Song of Two Humans"
+    - id: 1
+      answer: Vertigo
+    - id: 2
+      answer: Citizen Kane
+    - id: 3
+      answer: The Apartment
+    - id: 4
+      answer: North by Northwest
+    - id: 5
+      answer: Chinatown
+    - id: 6
+      answer: All About Eve
+    - id: 7
+      answer: The Searchers
+    - id: 8
+      answer: "2001: A Space Odyssey"
+    - id: 9
+      answer: The Passion of Joan of Arc
+    - id: 10
+      answer: 8½
+    - id: 11
+      answer: Apocalypse Now
+    - id: 12
+      answer: Withnail & I
+    - id: 13
+      answer: One Flew Over The Cuckoo’s Nest
+    - id: 14
+      answer: Pulp Fiction
+    - id: 15
+      answer: Late Spring
+    - id: 16
+      answer: Double Indemnity
+    - id: 17
+      answer: Persona
+    - id: 18
+      answer: The Usual Suspects
+    - id: 19
+      answer: Singin’ in the Rain
+    - id: 20
+      answer: Touch of Evil
+    - id: 21
+      answer: L’avventura
+    - id: 22
+      answer: The Godfather
+    - id: 23
+      answer: Ordet
+    - id: 24
+      answer: In the Mood for Love
+    - id: 25
+      answer: Rashomon
+    - id: 26
+      answer: Stalker
+    - id: 27
+      answer: Scarface
+    - id: 28
+      answer: Mulholland Dr.
+    - id: 29
+      answer: The Terminator
+    - id: 30
+      answer: This Sporting Life
+    - id: 31
+      answer: Taxi Driver
+    - id: 32
+      answer: The Silence of the Lambs
+    - id: 33
+      answer: Bicycle Thieves
+    - id: 34
+      answer: City Lights
+    - id: 35
+      answer: Psycho
+    - id: 36
+      answer: Jeanne Dielman, 23 quai du Commerce 1080 Bruxelles
+    - id: 37
+      answer: Pan’s Labyrinth
+    - id: 38
+      answer: Fight Club
+    - id: 39
+      answer: The 400 Blows
+    - id: 40
+      answer: La dolce vita
+    - id: 41
+      answer: The Wizard of Oz
+    - id: 42
+      answer: Some Like It Hot
+    - id: 43
+      answer: Cabaret
+    - id: 44
+      answer: Play Time
+    - id: 45
+      answer: Close-up
+    - id: 46
+      answer: A Night At The Opera
+    - id: 47
+      answer: Shoah
+    - id: 48
+      answer: Donnie Darko
+    - id: 49
+      answer: Raising Arizona
+    - id: 50
+      answer: The Breakfast Club
+    - id: 51
+      answer: Breathless
+    - id: 52
+      answer: Fanny and Alexander
+    - id: 53
+      answer: Le Premis
+    - id: 54
+      answer: Metropolis
+    - id: 55
+      answer: The Ladykillers
+    - id: 56
+      answer: Back To The Future
+    - id: 57
+      answer: Three Colours Blue
+    - id: 58
+      answer: The Shawshank Redemption
+    - id: 59
+      answer: Brazil
+    - id: 60
+      answer: Trainspotting
+    - id: 61
+      answer: La Jetée
+    - id: 62
+      answer: The Battle of Algiers
+    - id: 63
+      answer: Mirror
+    - id: 64
+      answer: Tokyo Story
+    - id: 65
+      answer: Pink Flamingo
+    - id: 66
+      answer: Dawn of the Dead
+    - id: 67
+      answer: Princess Mononoke
+    - id: 68
+      answer: Journey to Italy
+    - id: 69
+      answer: Secrets & Lies
+    - id: 70
+      answer: This is Spinal Tap
+    - id: 71
+      answer: The Seven Samurai
+    - id: 72
+      answer: Alien
+    - id: 73
+      answer: The General
+    - id: 74
+      answer: Man with a Movie Camera
+    - id: 75
+      answer: "Sunrise: A Song of Two Humans"
