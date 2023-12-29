@@ -1,20 +1,10 @@
-import { LoaderFunction, useLoaderData } from 'react-router-dom';
-import PUZZLES from '../../puzzles.yml';
-import {
-  Container,
-  Heading,
-  IconButton,
-  ListItem,
-  Stack,
-  Text,
-  useColorMode,
-} from '@chakra-ui/react';
+import { Container, Heading, ListItem, Stack, Text } from '@chakra-ui/react';
 import { CSSProperties, useRef, useState } from 'react';
 import PickableList from './PickableList';
 import StickyHeading from './StickyHeading';
-import CloseIcon from '../../icons/CloseIcon';
+import { puzzleRoute } from '..';
 
-type Puzzle = {
+export type Puzzle = {
   year: string;
   title: string;
   description: string;
@@ -31,27 +21,14 @@ type Clue = {
 
 type Answer = string;
 
-export const loader: LoaderFunction<{ year: string }> = async ({
-  params: { year },
-}): Promise<Puzzle> => {
-  const data = (year && PUZZLES[year]) || null;
-  if (!data) throw 'Not found';
-  return data;
-};
-
 const Puzzle: React.FC = () => {
-  const puzzle = useLoaderData() as Puzzle;
-
+  const { puzzle } = puzzleRoute.useLoaderData();
   const container = useRef<HTMLDivElement>(null);
 
   const [selectedClueHeight, setSelectedClueHeight] = useState(0);
   const [selectedClue, setSelectedClue] = useState<Clue | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<Answer | null>(null);
   const [selectedAnswerHeight, setSelectedAnswerHeight] = useState(0);
-
-  const { toggleColorMode } = useColorMode();
-
-  console.log(selectedClueHeight);
 
   return (
     <Stack
@@ -95,6 +72,7 @@ const Puzzle: React.FC = () => {
               sx={{
                 "&[aria-selected='true']": {
                   position: 'sticky',
+                  zIndex: 1,
                   top: '3.5rem',
                   bottom: 'calc(3.5rem + var(--selected-answer-height))',
                   bg: 'background.panel',
@@ -111,7 +89,7 @@ const Puzzle: React.FC = () => {
         </PickableList>
         <StickyHeading
           top="calc(3.5rem + var(--selected-clue-height))"
-          bottom="var(--selected-answer-height)"
+          bottom="calc(1rem + var(--selected-answer-height))"
         >
           Answers
         </StickyHeading>
@@ -126,8 +104,9 @@ const Puzzle: React.FC = () => {
               sx={{
                 "&[aria-selected='true']": {
                   position: 'sticky',
+                  zIndex: 1,
                   top: 'calc(7rem + var(--selected-clue-height))',
-                  bottom: 0,
+                  bottom: '1rem',
                   bg: 'background.panel',
                   borderColor: 'border.selected',
                 },
