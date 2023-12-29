@@ -1,0 +1,219 @@
+---
+2016:
+  year: 2016
+  title: Films
+  description: Compiled from best film lists made by the BFI and Film4, in order of rank.
+  clues:
+    - clue: Queer bandits doing the rounds
+      answer: 33
+      description: Queer = Bi, bandits = thieves, rounds – cycle.
+      credit: Written by Marcie.
+    - clue: Excellent neckwear
+      answer: 27
+      description: Scarf/ace.
+    - clue: Hodor detects heart
+      answer: 23
+      description: hodOR DETects
+    - clue: Aqua Navy rose sadly
+      answer: 57
+      description: Aqua, Navy, Rose = colours. Sadly = blue
+    - clue: The CD doesn’t suck
+      answer: 39
+      description: Do you know your Roman numerals?
+    - clue: Every You Take
+      answer: 51
+    - clue: A pageant hitherto presented
+      answer: 46
+      description: A Night At The Opera Anagram of ‘A Pageant Hitherto’
+    - clue: Something
+      answer: 73
+      credit: A Marcie Fishwick special
+    - clue: TSHIENRGAIINN
+      answer: 19
+      description: It’s the word SINGIN inside the THE RAIN.
+    - clue: Exhale Incorporated
+      answer: 35
+      description: Sigh Co.
+      credit: Courtesy of Kirsty
+    - clue: ‘Mr Gore, stop booing’ ‘No!’
+      answer: 62
+      description: Al jeers, Algiers? Close enough.
+    - clue: Suburban Tea Set
+      answer: 5
+    - clue: Anozira
+      answer: 49
+    - clue: A hastier Jamaican
+      answer: 25
+      description: Rasher Mon
+    - clue: Jumping after everyone else
+      answer: 15
+      credit: From my dad.
+    - clue: Golf club is fine-ish
+      answer: 31
+      description: If it’s a bit like a fine, it’s tax-y.
+    - clue: Going out during Earth Hour
+      answer: 34
+    - clue: Green villain, almost
+      answer: 1
+      description: Green = Vert (in French), Villian = Iago
+    - clue: Quarter 34
+      answer: 10
+    - clue: Finish a Pixar film
+      answer: 45
+    - clue: Thomas is replanting
+      answer: 60
+      description: Train’s potting
+    - clue: When Serena doesn’t feel like scoring
+      answer: 24
+    - clue: How George Bernard got his knife back
+      answer: 58
+    - clue: ‘Maybe I’m really really ordinary,’ Rachel starts
+      answer: 63
+      description: Starts = Acronym of Maybe I’m Really Really Ordinary Rachel
+    - clue: Security! Security!
+      answer: 16
+    - clue: Kim Kardashian’s child made a point
+      answer: 4
+      description: Trivial as long as you know Kim’s kid’s name.
+    - clue: A range of taxis
+      answer: 43
+      description: Cab Array. You’re welcome
+    - clue: Myth Mash
+      answer: 14
+    - clue: River Warriors
+      answer: 71
+      description: The Severn is one of the largest rivers in the UK. There’s also a Severn River in the Murray-Darling basin, so you really don’t have an excuse for not getting this.
+    - clue: All Roads
+      answer: 68
+      description: You know what they say about where all roads lead
+    - clue: Do maths as Snoop drops it
+      answer: 42
+      description: Sum Like It Hot
+    - clue: ...but knickers are healthy
+      answer: 59
+      description: Bra’s ill...
+    - clue: Past Facing
+      answer: 56
+    - clue: If Brandon Flowers transitions
+      answer: 55
+      description: Originally this was just going to be the names of the Killers in feminine forms, but that would probably have been too obscure
+    - clue: My regular client knows something’s up
+      answer: 18
+    - clue: A♭
+      answer: 9
+      description: A Flat
+    - clue: Miles Per Damage
+      answer: 53
+      description: Anagram of Miles Per
+    - clue: Shop Dog
+      answer: 26
+      description: Store Cur. Sorry.
+    - clue: This group of bowmen
+      answer: 7
+      description: These/Archers
+    - clue: ...and praises The Man Who Fell To Earth
+      answer: 37
+      description: RIP, David
+    - clue: Love at the Rivers’ bend
+      answer: 9
+      description: Hence the weird capitalisation of Rivers
+    - clue: Old Age Pensioner
+      answer: 2
+      description: Cane/Kane.
+      credit: Thank my mum for this one.
+    - clue: Toilet Ace
+      answer: 21
+      description: Toilet = Lav, Ace Ventura
+    - clue: Pretend to be a herb
+      answer: 44
+      description: Time/Thyme
+    - clue: This salmon ring is on fire
+      answer: 65
+      description: Pink Flaming O
+    - clue: Pier in Los Angeles
+      answer: 61
+    - clue: A Level
+      answer: 6
+    - clue: Someone who has a handbag
+      answer: 17
+      description: Purse Owner
+    - clue: ...the Mortal Closer
+      answer: 22
+    - clue: The one we couldn’t be bothered to do
+      answer: 36
+  answers:
+    - Vertigo
+    - Citizen Kane
+    - The Apartment
+    - North by Northwest
+    - Chinatown
+    - All About Eve
+    - The Searchers
+    - "2001: A Space Odyssey"
+    - The Passion of Joan of Arc
+    - 8½
+    - Apocalypse Now
+    - Withnail & I
+    - One Flew Over The Cuckoo’s Nest
+    - Pulp Fiction
+    - Late Spring
+    - Double Indemnity
+    - Persona
+    - The Usual Suspects
+    - Singin’ in the Rain
+    - Touch of Evil
+    - L’avventura
+    - The Godfather
+    - Ordet
+    - In the Mood for Love
+    - Rashomon
+    - Stalker
+    - Scarface
+    - Mulholland Dr.
+    - The Terminator
+    - This Sporting Life
+    - Taxi Driver
+    - The Silence of the Lambs
+    - Bicycle Thieves
+    - City Lights
+    - Psycho
+    - Jeanne Dielman, 23 quai du Commerce 1080 Bruxelles
+    - Pan’s Labyrinth
+    - Fight Club
+    - The 400 Blows
+    - La dolce vita
+    - The Wizard of Oz
+    - Some Like It Hot
+    - Cabaret
+    - Play Time
+    - Close-up
+    - A Night At The Opera
+    - Shoah
+    - Donnie Darko
+    - Raising Arizona
+    - The Breakfast Club
+    - Breathless
+    - Fanny and Alexander
+    - Le Premis
+    - Metropolis
+    - The Ladykillers
+    - Back To The Future
+    - Three Colours Blue
+    - The Shawshank Redemption
+    - Brazil
+    - Trainspotting
+    - La Jetée
+    - The Battle of Algiers
+    - Mirror
+    - Tokyo Story
+    - Pink Flamingo
+    - Dawn of the Dead
+    - Princess Mononoke
+    - Journey to Italy
+    - Secrets & Lies
+    - This is Spinal Tap
+    - The Seven Samurai
+    - Alien
+    - The General
+    - Man with a Movie Camera
+    - "Sunrise: A Song of Two Humans"
