@@ -54,6 +54,7 @@ const Puzzle: React.FC = () => {
       pb={8}
       style={
         {
+          '--header-height': 'calc(3.5rem + 1px)',
           '--progress-bar-height': '0.5rem',
           '--selected-clue-height': `${selectedClueHeight}px`,
           '--selected-answer-height': `${selectedAnswerHeight}px`,
@@ -74,7 +75,13 @@ const Puzzle: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <Container pos="sticky" top={0} zIndex={20} pl={16} bg="background.base">
+      <Container
+        pos="sticky"
+        top="var(--header-height)"
+        zIndex={20}
+        pl={16}
+        bg="background.base"
+      >
         <Progress
           max={puzzle.clues.length}
           value={solution.size}
@@ -106,7 +113,7 @@ const Puzzle: React.FC = () => {
       </Container>
       <Container>
         <StickyHeading
-          top="var(--progress-bar-height)"
+          top="calc(var(--header-height) + var(--progress-bar-height))"
           display="grid"
           gridTemplateColumns="1fr auto"
           alignItems="baseline"
@@ -139,7 +146,8 @@ const Puzzle: React.FC = () => {
               layout="position"
               sx={{
                 ...sx,
-                '--sticky-top': 'calc(3rem + var(--progress-bar-height))',
+                '--sticky-top':
+                  'calc(var(--header-height) + 3rem + var(--progress-bar-height))',
                 '--sticky-bottom':
                   'calc(3.5rem + var(--selected-answer-height))',
               }}
@@ -163,7 +171,7 @@ const Puzzle: React.FC = () => {
         </PickableList>
         <Divider my={4} />
         <StickyHeading
-          top="calc(3rem + var(--selected-clue-height) + var(--progress-bar-height))"
+          top="calc(var(--header-height) + 3rem + var(--selected-clue-height) + var(--progress-bar-height))"
           bottom="calc(1rem + var(--selected-answer-height))"
         >
           Answers
@@ -191,7 +199,7 @@ const Puzzle: React.FC = () => {
               sx={{
                 ...sx,
                 '--sticky-top':
-                  'calc(6rem + var(--selected-clue-height) + var(--progress-bar-height))',
+                  'calc(var(--header-height) + 6rem + var(--selected-clue-height) + var(--progress-bar-height))',
                 '--sticky-bottom': '1rem',
               }}
               {...props}

@@ -32,7 +32,7 @@ const Reveal: React.FC<RevealProps> = ({ clue, answer, onComplete }) => {
         className="reveal"
         display="flex"
         flexDirection="column"
-        w="lg"
+        w={{ base: 'sm', md: 'lg' }}
         gap={2}
       >
         <Candidate label="Clue" layoutId={`clue-${clue.id}`}>
@@ -59,9 +59,9 @@ const Candidate: React.FC<CandidateProps> = ({ label, children, ...props }) => {
       py={2}
       rounded="md"
       shadow="md"
-      bg="background.panel"
+      bg="var(--highlight-color-subtle)"
       border="1px solid transparent"
-      borderColor="border.selected"
+      borderColor="var(--highlight-color)"
       display="flex"
       flexDirection="column"
       alignItems="center"

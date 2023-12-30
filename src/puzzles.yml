@@ -343,3 +343,224 @@
       answer: Man with a Movie Camera
     - id: 75
       answer: "Sunrise: A Song of Two Humans"
+2017:
+  year: 2017
+  title: Video games
+  description: |
+    This is Time Magazine’s list of the top fifty games of all time, presented in that order.
+    Individual game titles on the list have been reduced here to their franchise names (eg. ‘Grand Theft Auto III’ appears here as ‘Grand Theft Auto’).
+  color: "#88B04B"
+  clues:
+    - id: 1
+      clue: Dribs
+      answer: 47
+      description: ‘Angry’ indicates anagram
+    - id: 2
+      clue: Hit the bench
+      answer: 15
+    - id: 3
+      clue: Lupine lager
+      answer: 31
+    - id: 4
+      clue: Aztec cheesemaker
+      answer: 6
+      description: Mayan Kraft? Minecraft? Close enough.
+    - id: 5
+      clue: Name of my underwear
+      answer: 36
+      description: Bra ID
+    - id: 6
+      clue: Elder leisure industry askew
+      answer: 44
+      description: Elder = Gran, Leisure industry = Tourism, Askew = Anagram
+    - id: 7
+      clue: ‘You can’t have that point’
+      answer: 22
+      description: Goal deny. You’re welcome.
+    - id: 8
+      clue: Go soft on gearhead
+      answer: 39
+      description: Go soft = p [for piano, in music]; on = on; gear-head = g
+    - id: 9
+      clue: Mood swings
+      answer: 4
+    - id: 10
+      clue: Crazy about the French
+      answer: 34
+      description: Crazy = gaga; the [French] = la
+    - id: 11
+      clue: The Third Element
+      answer: 17
+      description: Half of ‘Life’ = Li [Symbol for Lithium, 3rd element of the periodic table]
+    - id: 12
+      clue: Freak-sitter
+      answer: 1
+      description: ‘Freak’ indicates anagram
+    - id: 13
+      clue: Arya’s barge
+      answer: 25
+      description: Stark raft
+    - id: 14
+      clue: A stunning resumé
+      answer: 41
+    - id: 15
+      clue: Evil computer finds love
+      answer: 24
+      description: Evil computer = Hal; Love = 0 [in tennis]
+    - id: 16
+      clue: ‘Is Liza there? It’s her mother’
+      answer: 42
+      description: Call of Judy. Garland. Fight me.
+    - id: 17
+      clue: Give thanks after party
+      answer: 17
+      description: Party = Do; Thanks = Ta
+    - id: 18
+      clue: Genital, or other junk
+      answer: 9
+      description: ‘Junk’ indicates anagram
+    - id: 19
+      clue: The sound posh ducks make
+      answer: 14
+    - id: 20
+      clue: Never look at soft drink again
+      answer: 12
+      description: Final Fanta see
+    - id: 21
+      clue: Alternately, mess up a nano-file
+      answer: 40
+      description: Alternately [every other letter] = mEsS uP a NaNoFiLe
+    - id: 22
+      clue: Get ready for the holiday, dude!
+      answer: 5
+      description: Pack, man!
+    - id: 23
+      clue: The person who gives Mr. Felton cornrows
+      answer: 18
+      description: Tom braider
+    - id: 24
+      clue: Live wildly after Trump is decapitated
+      answer: 45
+      description: Wildly indicates anagram, so Live = Evil; President, decapitated = Resident
+    - id: 25
+      clue: No room in Palpatine’s, but there’s...
+      answer: 19
+      description: …In Vader’s. It’s your fault for choosing to do this.
+    - id: 26
+      clue: Maybe you should try starters?
+      answer: 28
+      description: Starters = first letters of each word
+    - id: 27
+      clue: Fail at giving it everything
+      answer: 35
+      description: Fail = F; giving it everything = all out
+    - id: 28
+      clue: Lisp or talk secretly
+      answer: 37
+      description: Lis [p or tal] k
+    - id: 29
+      clue: Lenin pardoned
+      answer: 33
+    - id: 30
+      clue: He’s in Tim’s
+      answer: 30
+      description: T [he s] ims
+  answers:
+    - id: 1
+      answer: Tetris
+    - id: 2
+      answer: Super Mario
+    - id: 3
+      answer: Ocarina of Time
+    - id: 4
+      answer: Doom
+    - id: 5
+      answer: Pac-Man
+    - id: 6
+      answer: Minecraft
+    - id: 7
+      answer: The Legend of Zelda
+    - id: 8
+      answer: Super Mario Bros.
+    - id: 9
+      answer: The Oregon Trail
+    - id: 10
+      answer: World of Warcraft
+    - id: 11
+      answer: Sid Meier’s Civilization
+    - id: 12
+      answer: Final Fantasy
+    - id: 13
+      answer: SimCity
+    - id: 14
+      answer: Quake
+    - id: 15
+      answer: Counter-Strike
+    - id: 16
+      answer: Grand Theft Auto
+    - id: 17
+      answer: Half-Life
+    - id: 18
+      answer: Tomb Raider
+    - id: 19
+      answer: Space Invaders
+    - id: 20
+      answer: Zork
+    - id: 21
+      answer: Diablo
+    - id: 22
+      answer: GoldenEye
+    - id: 23
+      answer: Microsoft Flight Simulator
+    - id: 24
+      answer: Halo
+    - id: 25
+      answer: StarCraft
+    - id: 26
+      answer: Mortal Kombat
+    - id: 27
+      answer: Donkey Kong
+    - id: 28
+      answer: Myst
+    - id: 29
+      answer: Pokemon Red & Blue
+    - id: 30
+      answer: The Sims
+    - id: 31
+      answer: Wolfenstein
+    - id: 32
+      answer: Super Mario Kart
+    - id: 33
+      answer: Red Dead Redemption
+    - id: 34
+      answer: Galaga
+    - id: 35
+      answer: Fallout
+    - id: 36
+      answer: Braid
+    - id: 37
+      answer: Portal
+    - id: 38
+      answer: Castlevania
+    - id: 39
+      answer: Pong
+    - id: 40
+      answer: ESPN NFL
+    - id: 41
+      answer: BioShock
+    - id: 42
+      answer: Call of Duty
+    - id: 43
+      answer: Super Smash Bros.
+    - id: 44
+      answer: Gran Turismo
+    - id: 45
+      answer: Resident Evil
+    - id: 46
+      answer: Guitar Hero
+    - id: 47
+      answer: Angry Birds
+    - id: 48
+      answer: Dota
+    - id: 49
+      answer: King’s Quest

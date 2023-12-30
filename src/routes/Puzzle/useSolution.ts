@@ -35,7 +35,6 @@ const load = (puzzle: Puzzle, storage: Storage): State => {
     const answer = answers[answerId];
     return clue && answer ? acc.set(clue, answer) : acc;
   }, new Map());
-  console.log({ solution });
   return solution;
 };
 
@@ -77,7 +76,6 @@ const useSolution = (puzzle: Puzzle) => {
   useEffect(() => {
     const json = localStorage.getItem(storageKey) || '{}';
     const storage = JSON.parse(json) as Storage;
-    console.log(storage);
     dispatch({ type: 'load', storage });
   }, [storageKey]);
 
