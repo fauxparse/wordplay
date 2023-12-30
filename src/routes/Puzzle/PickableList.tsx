@@ -98,7 +98,7 @@ const PickableList = <T extends Clue | Answer>({
           onClick: complete.has(item) ? undefined : () => select(index),
           children: (
             <>
-              <Text textAlign="right" gridArea="number" mixBlendMode="multiply">
+              <Text textAlign="right" gridArea="number">
                 {item.id}
               </Text>
               {selected === item && (
@@ -111,7 +111,6 @@ const PickableList = <T extends Clue | Answer>({
                   minW={0}
                   aria-label="Cancel"
                   icon={<CloseIcon boxSize={4} />}
-                  mixBlendMode="multiply"
                   onClick={(e) => {
                     select(null);
                     e.stopPropagation();
@@ -123,7 +122,7 @@ const PickableList = <T extends Clue | Answer>({
                   as={motion.span}
                   gridRow={1}
                   gridColumn={2}
-                  bg="var(--highlight-color)"
+                  bg="var(--chakra-colors-text-secondary)"
                   h="1px"
                   mt="0.85em"
                   mx="-0.25em"

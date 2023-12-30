@@ -1,6 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
+import { switchAnatomy } from '@chakra-ui/anatomy';
+import { createMultiStyleConfigHelpers } from '@chakra-ui/react';
 
-const neutral = {
+export const neutral = {
   neutral1: '#fcfcfd',
   neutral2: '#f9f9fb',
   neutral3: '#f0f0f3',
@@ -15,7 +17,7 @@ const neutral = {
   neutral12: '#1c2024',
 };
 
-const neutralDark = {
+export const neutralDark = {
   neutral1: '#111113',
   neutral2: '#18191b',
   neutral3: '#212225',
@@ -30,6 +32,72 @@ const neutralDark = {
   neutral12: '#edeef0',
 };
 
+const crimson = {
+  crimson1: '#fffcfd',
+  crimson2: '#fef7f9',
+  crimson3: '#ffe9f0',
+  crimson4: '#fedce7',
+  crimson5: '#facedd',
+  crimson6: '#f3bed1',
+  crimson7: '#eaacc3',
+  crimson8: '#e093b2',
+  crimson9: '#e93d82',
+  crimson10: '#df3478',
+  crimson11: '#cb1d63',
+  crimson12: '#621639',
+};
+
+const crimsonDark = {
+  crimson1: '#191114',
+  crimson2: '#201318',
+  crimson3: '#381525',
+  crimson4: '#4d122f',
+  crimson5: '#5c1839',
+  crimson6: '#6d2545',
+  crimson7: '#873356',
+  crimson8: '#b0436e',
+  crimson9: '#e93d82',
+  crimson10: '#ee518a',
+  crimson11: '#ff92ad',
+  crimson12: '#fdd3e8',
+};
+
+const {
+  definePartsStyle: defineSwitchParts,
+  defineMultiStyleConfig: defineSwitchConfig,
+} = createMultiStyleConfigHelpers(switchAnatomy.keys);
+
+const switchStyle = defineSwitchParts({
+  thumb: {
+    bg: 'neutral.1',
+  },
+  track: {
+    bg: 'neutral.3',
+    _checked: {
+      bg: 'crimson.5',
+    },
+  },
+});
+
+const switchTheme = defineSwitchConfig({
+  baseStyle: switchStyle,
+});
+
+const makePalette = <C extends string, K extends `${C}${number}`>(
+  light: Record<K, string>,
+  dark: Record<K, string>,
+): Record<`${number}`, string> =>
+  Object.keys(light).reduce(
+    (acc, key) =>
+      Object.assign(acc, {
+        [key.replace(/^[^\d]+/, '')]: {
+          default: light[key as K],
+          _dark: dark[key as K],
+        },
+      }),
+    {},
+  );
+
 export const theme = extendTheme({
   initialColorMode: 'light',
   useSystemColorMode: false,
@@ -43,6 +111,8 @@ export const theme = extendTheme({
   },
   semanticTokens: {
     colors: {
+      neutral: makePalette(neutral, neutralDark),
+      crimson: makePalette(crimson, crimsonDark),
       background: {
         base: {
           default: neutral.neutral1,
@@ -82,5 +152,8 @@ export const theme = extendTheme({
         },
       },
     },
+  },
+  components: {
+    Switch: switchTheme,
   },
 });

@@ -7,9 +7,10 @@ import {
   Progress,
   Stack,
   Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { CSSProperties, useEffect, useRef, useState } from 'react';
+import { CSSProperties, useEffect, useMemo, useRef, useState } from 'react';
 import tinycolor from 'tinycolor2';
 import { puzzleRoute } from '..';
 import PickableList from './PickableList';
@@ -17,8 +18,12 @@ import Reveal from './Reveal';
 import StickyHeading from './StickyHeading';
 import { Answer, Clue } from './types';
 import useSolution from './useSolution';
+import { neutral, neutralDark } from '../../theme';
+import { useSettings } from '../../SettingsProvider';
 
 const Puzzle: React.FC = () => {
+  const { hideCompleted, blackAndWhite } = useSettings();
+
   const { puzzle } = puzzleRoute.useLoaderData();
   const container = useRef<HTMLDivElement>(null);
 
@@ -48,6 +53,27 @@ const Puzzle: React.FC = () => {
     setSelectedAnswerHeight(0);
   };
 
+  const black = useColorModeValue(neutral.neutral12, neutralDark.neutral12);
+  const blend = useColorModeValue(neutral.neutral1, neutralDark.neutral1);
+
+  const highlight = blackAndWhite ? black : puzzle.color;
+
+  const clues = useMemo(
+    () =>
+      hideCompleted
+        ? puzzle.clues.filter((c: Clue) => !solvedClues.has(c))
+        : puzzle.clues,
+    [puzzle, hideCompleted, solvedClues],
+  );
+
+  const answers = useMemo(
+    () =>
+      hideCompleted
+        ? puzzle.answers.filter((a: Answer) => !solvedAnswers.has(a))
+        : puzzle.answers,
+    [puzzle, hideCompleted, solvedAnswers],
+  );
+
   return (
     <Stack
       ref={container}
@@ -58,9 +84,9 @@ const Puzzle: React.FC = () => {
           '--progress-bar-height': '0.5rem',
           '--selected-clue-height': `${selectedClueHeight}px`,
           '--selected-answer-height': `${selectedAnswerHeight}px`,
-          '--highlight-color': puzzle.color,
+          '--highlight-color': highlight,
           '--highlight-color-subtle': tinycolor
-            .mix(puzzle.color, '#fff', 70)
+            .mix(highlight, blend, 70)
             .toHexString(),
         } as CSSProperties
       }
@@ -132,7 +158,7 @@ const Puzzle: React.FC = () => {
           </Text>
         </StickyHeading>
         <PickableList
-          items={puzzle.clues}
+          items={clues}
           selected={selectedClue}
           complete={solvedClues}
           onSelect={setSelectedClue}
@@ -153,12 +179,10 @@ const Puzzle: React.FC = () => {
               }}
               {...props}
             >
-              <Text gridArea="text" mixBlendMode="multiply">
-                {clue.clue}
-              </Text>
+              <Text gridArea="text">{clue.clue}</Text>
               {solution.has(clue) && (
-                <Box gridRow={2} gridColumn="2 / span 2" color="text.primary">
-                  <Text>{solution.get(clue)?.answer}</Text>
+                <Box gridRow={2} gridColumn="2 / span 2" color="text.secondary">
+                  <Text color="text.primary">{solution.get(clue)?.answer}</Text>
                   {clue.description && (
                     <Text fontSize="sm">{clue.description}</Text>
                   )}
@@ -177,7 +201,7 @@ const Puzzle: React.FC = () => {
           Answers
         </StickyHeading>
         <PickableList
-          items={puzzle.answers}
+          items={answers}
           selected={selectedAnswer}
           complete={solvedAnswers}
           onSelect={setSelectedAnswer}

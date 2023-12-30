@@ -4,20 +4,19 @@ import {
   Container,
   Heading,
   IconButton,
-  useColorMode,
 } from '@chakra-ui/react';
 import SettingsIcon from '../icons/SettingsIcon';
-import SunIcon from '../icons/SunIcon';
-import MoonIcon from '../icons/MoonIcon';
 import ArrowLeftIcon from '../icons/ArrowLeftIcon';
 import { Link, useRouterState } from '@tanstack/react-router';
+import { useState } from 'react';
+import Settings from './Settings';
 
 const Header = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   const {
     location: { pathname },
   } = useRouterState();
+
+  const [showSettings, setShowSettings] = useState(false);
 
   return (
     <Box
@@ -57,22 +56,11 @@ const Header = () => {
             aria-label="Settings"
             color="text.secondary"
             icon={<SettingsIcon boxSize={6} />}
-          />
-          <IconButton
-            variant="ghost"
-            aria-label="Toggle dark mode"
-            color="text.secondary"
-            icon={
-              colorMode === 'dark' ? (
-                <SunIcon boxSize={6} />
-              ) : (
-                <MoonIcon boxSize={6} />
-              )
-            }
-            onClick={toggleColorMode}
+            onClick={() => setShowSettings(true)}
           />
         </ButtonGroup>
       </Container>
+      <Settings isOpen={showSettings} onClose={() => setShowSettings(false)} />
     </Box>
   );
 };

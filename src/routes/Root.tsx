@@ -1,10 +1,22 @@
-import { Container, ListItem, OrderedList, Text } from '@chakra-ui/react';
+import {
+  Container,
+  ListItem,
+  OrderedList,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import { Link } from '@tanstack/react-router';
 import PUZZLES from '../puzzles.yml';
 import { useMemo } from 'react';
 import { orderBy } from 'lodash-es';
+import { useSettings } from '../SettingsProvider';
+import { neutral, neutralDark } from '../theme';
 
 const Root: React.FC = () => {
+  const { blackAndWhite } = useSettings();
+
+  const black = useColorModeValue(neutral.neutral12, neutralDark.neutral12);
+
   const scores = useMemo<{
     [k in keyof typeof PUZZLES]: { found: number; total: number };
   }>(
@@ -46,7 +58,7 @@ const Root: React.FC = () => {
               gridArea="topic"
               fontSize="3xl"
               fontWeight="bold"
-              color={puzzle.color}
+              color={blackAndWhite ? black : puzzle.color}
             >
               {puzzle.title}
             </Text>

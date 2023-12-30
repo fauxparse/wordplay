@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import router from './routes';
 import { theme } from './theme';
+import SettingsProvider from './SettingsProvider';
 
 const root = document.getElementById('root');
 
@@ -13,7 +14,9 @@ if (root) {
     <React.StrictMode>
       <ColorModeScript initialColorMode={theme.initialColorMode} />
       <ChakraProvider theme={theme}>
-        <RouterProvider router={router} />
+        <SettingsProvider>
+          <RouterProvider router={router} />
+        </SettingsProvider>
       </ChakraProvider>
     </React.StrictMode>,
   );
