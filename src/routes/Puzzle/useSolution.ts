@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useReducer } from 'react';
+import { useEffect, useMemo, useReducer, useState } from 'react';
 import { Answer, Clue, Puzzle } from './types';
 import PUZZLES from '../../puzzles.yml';
 import { keyBy, toPairs } from 'lodash-es';
@@ -16,6 +16,9 @@ type Action =
   | {
       type: 'load';
       storage: Storage;
+    }
+  | {
+      type: 'clear';
     };
 
 type State = Map<Clue, Answer>;
@@ -48,26 +51,29 @@ const save = (storageKey: string, solution: State) => {
   );
 
   localStorage.setItem(storageKey, data);
+  return solution;
 };
 
 const useSolution = (puzzle: Puzzle) => {
+  const [loading, setLoading] = useState(true);
+
   const storageKey = `wordplay.${puzzle.year}`;
 
   const [solution, dispatch] = useReducer((state: State, action: Action) => {
     switch (action.type) {
       case 'match': {
         const newState = new Map(state).set(action.clue, action.answer);
-        save(storageKey, newState);
-        return newState;
+        return save(storageKey, newState);
       }
       case 'unmatch': {
         const newState = new Map(state);
         newState.delete(action.clue);
-        save(storageKey, newState);
-        return newState;
+        return save(storageKey, newState);
       }
       case 'load':
         return load(puzzle, action.storage);
+      case 'clear':
+        return save(storageKey, new Map());
       default:
         return state;
     }
@@ -77,6 +83,7 @@ const useSolution = (puzzle: Puzzle) => {
     const json = localStorage.getItem(storageKey) || '{}';
     const storage = JSON.parse(json) as Storage;
     dispatch({ type: 'load', storage });
+    setLoading(false);
   }, [storageKey]);
 
   const solvedClues = useMemo(() => new Set(solution.keys()), [solution]);
@@ -85,8 +92,17 @@ const useSolution = (puzzle: Puzzle) => {
   const match = (clue: Clue, answer: Answer) =>
     dispatch({ type: 'match', clue, answer });
   const unmatch = (clue: Clue) => dispatch({ type: 'unmatch', clue });
+  const clear = () => dispatch({ type: 'clear' });
 
-  return { solution, solvedClues, solvedAnswers, match, unmatch };
+  return {
+    loading,
+    solution,
+    solvedClues,
+    solvedAnswers,
+    match,
+    unmatch,
+    clear,
+  };
 };
 
 export default useSolution;

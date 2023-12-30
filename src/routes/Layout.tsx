@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Outlet } from '@tanstack/react-router';
 import Header from './Header';
+import ConfirmationProvider from '../ConfirmationProvider';
 
 const TanStackRouterDevtools =
   process.env.NODE_ENV === 'production'
@@ -17,9 +18,11 @@ const TanStackRouterDevtools =
 const Layout: React.FC = () => {
   return (
     <Suspense fallback={null}>
-      <Header />
-      <Outlet />
-      <TanStackRouterDevtools />
+      <ConfirmationProvider>
+        <Header />
+        <Outlet />
+        <TanStackRouterDevtools />
+      </ConfirmationProvider>
     </Suspense>
   );
 };

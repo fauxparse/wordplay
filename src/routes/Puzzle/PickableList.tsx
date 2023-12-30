@@ -5,6 +5,7 @@ import {
   ListProps,
   OrderedList,
   Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
@@ -66,6 +67,8 @@ const PickableList = <T extends Clue | Answer>({
     return () => observer.disconnect();
   }, [selectedElement, onMeasure]);
 
+  const blendMode = useColorModeValue('multiply', 'screen');
+
   return (
     <OrderedList ref={container} as="div" display="contents" {...props}>
       {items.map((item, index) =>
@@ -115,6 +118,7 @@ const PickableList = <T extends Clue | Answer>({
                     select(null);
                     e.stopPropagation();
                   }}
+                  mixBlendMode={blendMode}
                 />
               )}
               {complete.has(item) && (

@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Divider,
   Heading,
@@ -9,7 +10,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { CSSProperties, useEffect, useMemo, useRef, useState } from 'react';
 import tinycolor from 'tinycolor2';
 import { puzzleRoute } from '..';
@@ -20,6 +21,8 @@ import { Answer, Clue } from './types';
 import useSolution from './useSolution';
 import { neutral, neutralDark } from '../../theme';
 import { useSettings } from '../../SettingsProvider';
+import Fireworks from './Fireworks';
+import { useConfirmation } from '../../ConfirmationProvider';
 
 const Puzzle: React.FC = () => {
   const { hideCompleted, blackAndWhite } = useSettings();
@@ -34,7 +37,8 @@ const Puzzle: React.FC = () => {
 
   const [revealing, setRevealing] = useState(false);
 
-  const { solution, match, solvedAnswers, solvedClues } = useSolution(puzzle);
+  const { loading, solution, match, solvedAnswers, solvedClues, clear } =
+    useSolution(puzzle);
 
   useEffect(() => {
     if (selectedClue && selectedAnswer) {
@@ -54,9 +58,12 @@ const Puzzle: React.FC = () => {
   };
 
   const black = useColorModeValue(neutral.neutral12, neutralDark.neutral12);
-  const blend = useColorModeValue(neutral.neutral1, neutralDark.neutral1);
+  const white = useColorModeValue(neutral.neutral1, neutralDark.neutral1);
 
   const highlight = blackAndWhite ? black : puzzle.color;
+
+  const isDark = tinycolor(highlight).isDark();
+  const contrast = isDark ? neutralDark.neutral1 : neutral.neutral12;
 
   const clues = useMemo(
     () =>
@@ -74,6 +81,21 @@ const Puzzle: React.FC = () => {
     [puzzle, hideCompleted, solvedAnswers],
   );
 
+  const solved = useMemo(
+    () => solution.size === puzzle.clues.length,
+    [puzzle, solution],
+  );
+
+  const { confirm } = useConfirmation();
+
+  const playAgain = () => {
+    confirm({
+      title: 'Start again?',
+      children: <Text>This will clear all your progress for this puzzle.</Text>,
+      confirm: 'Start again',
+    }).then(clear);
+  };
+
   return (
     <Stack
       ref={container}
@@ -86,7 +108,7 @@ const Puzzle: React.FC = () => {
           '--selected-answer-height': `${selectedAnswerHeight}px`,
           '--highlight-color': highlight,
           '--highlight-color-subtle': tinycolor
-            .mix(highlight, blend, 70)
+            .mix(highlight, white, 70)
             .toHexString(),
         } as CSSProperties
       }
@@ -120,7 +142,7 @@ const Puzzle: React.FC = () => {
           }}
         />
       </Container>
-      <Container as="header" py={3} mt={40} mb="3rem">
+      <Container as="header" py={3} mt={40}>
         <Stack pl={12} gap={3}>
           <Text
             as="small"
@@ -137,110 +159,166 @@ const Puzzle: React.FC = () => {
           <Text fontSize="lg">{puzzle.description}</Text>
         </Stack>
       </Container>
-      <Container>
-        <StickyHeading
-          top="calc(var(--header-height) + var(--progress-bar-height))"
-          display="grid"
-          gridTemplateColumns="1fr auto"
-          alignItems="baseline"
-        >
-          <Text as="span">Clues</Text>
-          <Text as="span">
-            <Text as="b">{solution.size}</Text>
-            <Text
-              as="small"
-              fontSize="100%"
-              fontWeight="normal"
-              color="text.secondary"
-            >
-              /{puzzle.clues.length}
-            </Text>
-          </Text>
-        </StickyHeading>
-        <PickableList
-          items={clues}
-          selected={selectedClue}
-          complete={solvedClues}
-          onSelect={setSelectedClue}
-          onMeasure={setSelectedClueHeight}
-        >
-          {(clue, _i, { children, sx, ...props }) => (
-            <ListItem
+      <AnimatePresence mode="wait">
+        {!loading &&
+          (solved ? (
+            <Container
               as={motion.div}
-              key={`${solution.has(clue) ? 'matched' : 'clue'}-${clue.id}`}
-              layoutId={`${solution.has(clue) ? 'matched' : 'clue'}-${clue.id}`}
-              layout="position"
-              sx={{
-                ...sx,
-                '--sticky-top':
-                  'calc(var(--header-height) + 3rem + var(--progress-bar-height))',
-                '--sticky-bottom':
-                  'calc(3.5rem + var(--selected-answer-height))',
-              }}
-              {...props}
+              key="solved"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
             >
-              <Text gridArea="text">{clue.clue}</Text>
-              {solution.has(clue) && (
-                <Box gridRow={2} gridColumn="2 / span 2" color="text.secondary">
-                  <Text color="text.primary">{solution.get(clue)?.answer}</Text>
-                  {clue.description && (
-                    <Text fontSize="sm">{clue.description}</Text>
-                  )}
-                  {clue.credit && <Text fontSize="sm">{clue.credit}</Text>}
-                </Box>
+              <Stack
+                ml={9}
+                p={3}
+                gap={3}
+                rounded="md"
+                bg="var(--highlight-color-subtle)"
+                alignItems="start"
+              >
+                <Text>Congratulations! You’ve solved this puzzle.</Text>
+                <Button
+                  variant="solid"
+                  bg="var(--highlight-color)"
+                  _hover={{ bg: 'var(--highlight-color)' }}
+                  _active={{ bg: 'var(--highlight-color)' }}
+                  color={contrast}
+                  onClick={playAgain}
+                >
+                  Play again
+                </Button>
+              </Stack>
+              <Fireworks color={puzzle.color} />
+            </Container>
+          ) : (
+            <Container
+              as={motion.div}
+              key="puzzle"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              mt="3rem"
+            >
+              <StickyHeading
+                top="calc(var(--header-height) + var(--progress-bar-height))"
+                display="grid"
+                gridTemplateColumns="1fr auto"
+                alignItems="baseline"
+              >
+                <Text as="span">Clues</Text>
+                <Text as="span">
+                  <Text as="b">{solution.size}</Text>
+                  <Text
+                    as="small"
+                    fontSize="100%"
+                    fontWeight="normal"
+                    color="text.secondary"
+                  >
+                    /{puzzle.clues.length}
+                  </Text>
+                </Text>
+              </StickyHeading>
+              <PickableList
+                items={clues}
+                selected={selectedClue}
+                complete={solvedClues}
+                onSelect={setSelectedClue}
+                onMeasure={setSelectedClueHeight}
+              >
+                {(clue, _i, { children, sx, ...props }) => (
+                  <ListItem
+                    as={motion.div}
+                    key={`${solution.has(clue) ? 'matched' : 'clue'}-${
+                      clue.id
+                    }`}
+                    layoutId={`${solution.has(clue) ? 'matched' : 'clue'}-${
+                      clue.id
+                    }`}
+                    layout="position"
+                    sx={{
+                      ...sx,
+                      '--sticky-top':
+                        'calc(var(--header-height) + 3rem + var(--progress-bar-height))',
+                      '--sticky-bottom':
+                        'calc(3.5rem + var(--selected-answer-height))',
+                    }}
+                    {...props}
+                  >
+                    <Text gridArea="text">{clue.clue}</Text>
+                    {solution.has(clue) && (
+                      <Box
+                        gridRow={2}
+                        gridColumn="2 / span 2"
+                        color="text.secondary"
+                      >
+                        <Text color="text.primary">
+                          {solution.get(clue)?.answer}
+                        </Text>
+                        {clue.description && (
+                          <Text fontSize="sm">{clue.description}</Text>
+                        )}
+                        {clue.credit && (
+                          <Text fontSize="sm">{clue.credit}</Text>
+                        )}
+                      </Box>
+                    )}
+                    {children}
+                  </ListItem>
+                )}
+              </PickableList>
+              <Divider my={4} />
+              <StickyHeading
+                top="calc(var(--header-height) + 3rem + var(--selected-clue-height) + var(--progress-bar-height))"
+                bottom="calc(1rem + var(--selected-answer-height))"
+              >
+                Answers
+              </StickyHeading>
+              <PickableList
+                items={answers}
+                selected={selectedAnswer}
+                complete={solvedAnswers}
+                onSelect={setSelectedAnswer}
+                onMeasure={setSelectedAnswerHeight}
+              >
+                {(answer, _i, { children, sx, ...props }) => (
+                  <ListItem
+                    as={motion.div}
+                    key={`${solvedAnswers.has(answer) ? 'solved' : 'answer'}-${
+                      answer.id
+                    }`}
+                    layoutId={`${
+                      solvedAnswers.has(answer) ? 'solved' : 'answer'
+                    }-${answer.id}`}
+                    layout="position"
+                    color={
+                      solvedAnswers.has(answer)
+                        ? 'text.disabled'
+                        : 'text.primary'
+                    }
+                    sx={{
+                      ...sx,
+                      '--sticky-top':
+                        'calc(var(--header-height) + 6rem + var(--selected-clue-height) + var(--progress-bar-height))',
+                      '--sticky-bottom': '1rem',
+                    }}
+                    {...props}
+                  >
+                    <Text gridArea="text">{answer.answer}</Text>
+                    {children}
+                  </ListItem>
+                )}
+              </PickableList>
+              {revealing && selectedClue && selectedAnswer && (
+                <Reveal
+                  clue={selectedClue}
+                  answer={selectedAnswer}
+                  onComplete={revealComplete}
+                />
               )}
-              {children}
-            </ListItem>
-          )}
-        </PickableList>
-        <Divider my={4} />
-        <StickyHeading
-          top="calc(var(--header-height) + 3rem + var(--selected-clue-height) + var(--progress-bar-height))"
-          bottom="calc(1rem + var(--selected-answer-height))"
-        >
-          Answers
-        </StickyHeading>
-        <PickableList
-          items={answers}
-          selected={selectedAnswer}
-          complete={solvedAnswers}
-          onSelect={setSelectedAnswer}
-          onMeasure={setSelectedAnswerHeight}
-        >
-          {(answer, _i, { children, sx, ...props }) => (
-            <ListItem
-              as={motion.div}
-              key={`${solvedAnswers.has(answer) ? 'solved' : 'answer'}-${
-                answer.id
-              }`}
-              layoutId={`${solvedAnswers.has(answer) ? 'solved' : 'answer'}-${
-                answer.id
-              }`}
-              layout="position"
-              color={
-                solvedAnswers.has(answer) ? 'text.disabled' : 'text.primary'
-              }
-              sx={{
-                ...sx,
-                '--sticky-top':
-                  'calc(var(--header-height) + 6rem + var(--selected-clue-height) + var(--progress-bar-height))',
-                '--sticky-bottom': '1rem',
-              }}
-              {...props}
-            >
-              <Text gridArea="text">{answer.answer}</Text>
-              {children}
-            </ListItem>
-          )}
-        </PickableList>
-        {revealing && selectedClue && selectedAnswer && (
-          <Reveal
-            clue={selectedClue}
-            answer={selectedAnswer}
-            onComplete={revealComplete}
-          />
-        )}
-      </Container>
+            </Container>
+          ))}
+      </AnimatePresence>
     </Stack>
   );
 };
