@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Outlet } from '@tanstack/react-router';
-import { Button, useColorMode } from '@chakra-ui/react';
+import Header from './Header';
 
 const TanStackRouterDevtools =
   process.env.NODE_ENV === 'production'
@@ -15,13 +15,9 @@ const TanStackRouterDevtools =
       );
 
 const Layout: React.FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <Suspense fallback={null}>
-      <Button pos="fixed" top="1rem" right="1rem" onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
+      <Header />
       <Outlet />
       <TanStackRouterDevtools />
     </Suspense>

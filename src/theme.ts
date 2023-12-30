@@ -33,6 +33,14 @@ const neutralDark = {
 export const theme = extendTheme({
   initialColorMode: 'light',
   useSystemColorMode: false,
+  styles: {
+    global: {
+      body: {
+        bg: 'background.base',
+        color: 'text.primary',
+      },
+    },
+  },
   semanticTokens: {
     colors: {
       background: {
@@ -44,8 +52,16 @@ export const theme = extendTheme({
           default: neutral.neutral5,
           _dark: neutralDark.neutral5,
         },
+        subtle: {
+          default: neutral.neutral3,
+          _dark: neutralDark.neutral3,
+        },
       },
       border: {
+        divider: {
+          default: neutral.neutral6,
+          _dark: neutralDark.neutral6,
+        },
         selected: {
           default: neutral.neutral8,
           _dark: neutralDark.neutral8,
@@ -59,6 +75,10 @@ export const theme = extendTheme({
         secondary: {
           default: neutral.neutral11,
           _dark: neutralDark.neutral11,
+        },
+        disabled: {
+          default: neutral.neutral8,
+          _dark: neutralDark.neutral8,
         },
       },
     },

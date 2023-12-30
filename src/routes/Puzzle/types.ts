@@ -2,6 +2,7 @@ export type Puzzle = {
   year: string;
   title: string;
   description: string;
+  color: string;
   clues: Clue[];
   answers: Answer[];
 };

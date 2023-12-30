@@ -1,11 +1,22 @@
-import { Container, Heading, ListItem, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Divider,
+  Heading,
+  ListItem,
+  Progress,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { CSSProperties, useEffect, useRef, useState } from 'react';
+import tinycolor from 'tinycolor2';
 import { puzzleRoute } from '..';
 import PickableList from './PickableList';
+import Reveal from './Reveal';
 import StickyHeading from './StickyHeading';
 import { Answer, Clue } from './types';
-import Reveal from './Reveal';
+import useSolution from './useSolution';
 
 const Puzzle: React.FC = () => {
   const { puzzle } = puzzleRoute.useLoaderData();
@@ -18,78 +29,141 @@ const Puzzle: React.FC = () => {
 
   const [revealing, setRevealing] = useState(false);
 
+  const { solution, match, solvedAnswers, solvedClues } = useSolution(puzzle);
+
   useEffect(() => {
     if (selectedClue && selectedAnswer) {
       setRevealing(true);
     }
   }, [selectedClue, selectedAnswer]);
 
-  const revealComplete = () => {
+  const revealComplete = ({ clue, answer }: { clue: Clue; answer: Answer }) => {
+    if (clue.answer === answer.id) {
+      match(clue, answer);
+    }
     setRevealing(false);
-    setTimeout(() => {
-      setSelectedClue(null);
-      setSelectedAnswer(null);
-    }, 300);
+    setSelectedClue(null);
+    setSelectedClueHeight(0);
+    setSelectedAnswer(null);
+    setSelectedAnswerHeight(0);
   };
 
   return (
     <Stack
       ref={container}
-      bg="background.base"
-      color="text.primary"
+      pb={8}
       style={
         {
+          '--progress-bar-height': '0.5rem',
           '--selected-clue-height': `${selectedClueHeight}px`,
           '--selected-answer-height': `${selectedAnswerHeight}px`,
+          '--highlight-color': puzzle.color,
+          '--highlight-color-subtle': tinycolor
+            .mix(puzzle.color, '#fff', 70)
+            .toHexString(),
         } as CSSProperties
       }
+      _after={{
+        content: '""',
+        pos: 'fixed',
+        bg: 'linear-gradient(to bottom, transparent, var(--chakra-colors-background-base) 50%)',
+        left: 0,
+        right: 0,
+        bottom: 0,
+        h: 8,
+        zIndex: 1,
+      }}
     >
-      <Container as="header" py={3}>
-        <Stack pl={12}>
-          <Heading as="h1">
-            <Text
-              as="small"
-              display="block"
-              fontSize="sm"
-              fontWeight="normal"
-              color="text.secondary"
-            >
-              {puzzle.year}
-            </Text>{' '}
+      <Container pos="sticky" top={0} zIndex={20} pl={16} bg="background.base">
+        <Progress
+          max={puzzle.clues.length}
+          value={solution.size}
+          h="var(--progress-bar-height)"
+          bg="background.subtle"
+          sx={{
+            '> div': {
+              bg: 'var(--highlight-color)',
+            },
+          }}
+        />
+      </Container>
+      <Container as="header" py={3} mt={40} mb="3rem">
+        <Stack pl={12} gap={3}>
+          <Text
+            as="small"
+            display="block"
+            fontSize="lg"
+            fontWeight="normal"
+            color="text.secondary"
+          >
+            {puzzle.year}
+          </Text>
+          <Heading as="h1" size="3xl" color="var(--highlight-color)">
             {puzzle.title}
           </Heading>
-          <Text>{puzzle.description}</Text>
+          <Text fontSize="lg">{puzzle.description}</Text>
         </Stack>
       </Container>
       <Container>
-        <StickyHeading top={0}>Clues</StickyHeading>
+        <StickyHeading
+          top="var(--progress-bar-height)"
+          display="grid"
+          gridTemplateColumns="1fr auto"
+          alignItems="baseline"
+        >
+          <Text as="span">Clues</Text>
+          <Text as="span">
+            <Text as="b">{solution.size}</Text>
+            <Text
+              as="small"
+              fontSize="100%"
+              fontWeight="normal"
+              color="text.secondary"
+            >
+              /{puzzle.clues.length}
+            </Text>
+          </Text>
+        </StickyHeading>
         <PickableList
           items={puzzle.clues}
           selected={selectedClue}
+          complete={solvedClues}
           onSelect={setSelectedClue}
           onMeasure={setSelectedClueHeight}
         >
           {(clue, _i, { children, sx, ...props }) => (
             <ListItem
               as={motion.div}
-              layoutId={`clue-${clue.id}`}
+              key={`${solution.has(clue) ? 'matched' : 'clue'}-${clue.id}`}
+              layoutId={`${solution.has(clue) ? 'matched' : 'clue'}-${clue.id}`}
               layout="position"
               sx={{
                 ...sx,
-                '--sticky-top': '3.5rem',
+                '--sticky-top': 'calc(3rem + var(--progress-bar-height))',
                 '--sticky-bottom':
                   'calc(3.5rem + var(--selected-answer-height))',
               }}
               {...props}
             >
-              <Text textAlign="right">{clue.id}</Text>
-              <Text>{clue.clue}</Text>
+              <Text gridArea="text" mixBlendMode="multiply">
+                {clue.clue}
+              </Text>
+              {solution.has(clue) && (
+                <Box gridRow={2} gridColumn="2 / span 2" color="text.primary">
+                  <Text>{solution.get(clue)?.answer}</Text>
+                  {clue.description && (
+                    <Text fontSize="sm">{clue.description}</Text>
+                  )}
+                  {clue.credit && <Text fontSize="sm">{clue.credit}</Text>}
+                </Box>
+              )}
               {children}
             </ListItem>
           )}
         </PickableList>
+        <Divider my={4} />
         <StickyHeading
-          top="calc(3.5rem + var(--selected-clue-height))"
+          top="calc(3rem + var(--selected-clue-height) + var(--progress-bar-height))"
           bottom="calc(1rem + var(--selected-answer-height))"
         >
           Answers
@@ -97,23 +171,32 @@ const Puzzle: React.FC = () => {
         <PickableList
           items={puzzle.answers}
           selected={selectedAnswer}
+          complete={solvedAnswers}
           onSelect={setSelectedAnswer}
           onMeasure={setSelectedAnswerHeight}
         >
           {(answer, _i, { children, sx, ...props }) => (
             <ListItem
               as={motion.div}
-              layoutId={`answer-${answer.id}`}
+              key={`${solvedAnswers.has(answer) ? 'solved' : 'answer'}-${
+                answer.id
+              }`}
+              layoutId={`${solvedAnswers.has(answer) ? 'solved' : 'answer'}-${
+                answer.id
+              }`}
               layout="position"
+              color={
+                solvedAnswers.has(answer) ? 'text.disabled' : 'text.primary'
+              }
               sx={{
                 ...sx,
-                '--sticky-top': 'calc(7rem + var(--selected-clue-height))',
+                '--sticky-top':
+                  'calc(6rem + var(--selected-clue-height) + var(--progress-bar-height))',
                 '--sticky-bottom': '1rem',
               }}
               {...props}
             >
-              <Text textAlign="right">{answer.id}</Text>
-              <Text>{answer.answer}</Text>
+              <Text gridArea="text">{answer.answer}</Text>
               {children}
             </ListItem>
           )}

@@ -6,22 +6,24 @@ import { Answer, Clue } from './types';
 type RevealProps = {
   clue: Clue;
   answer: Answer;
-  onComplete: () => void;
+  onComplete: (params: { clue: Clue; answer: Answer }) => void;
 };
 
 const Reveal: React.FC<RevealProps> = ({ clue, answer, onComplete }) => {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    if (clue.answer === answer.id) {
-      animate([
-        ['.reveal', { scale: 2, opacity: 0 }, { type: 'spring', at: 1 }],
-      ]).then(onComplete);
-    } else {
-      animate([
-        ['.reveal', { x: [0, 30, -30, 30, -30, 0] }, { type: 'spring', at: 1 }],
-      ]).then(onComplete);
-    }
+    animate(
+      clue.answer === answer.id
+        ? [['.reveal', { scale: 3, opacity: 0 }, { duration: 0.3, at: 1 }]]
+        : [
+            [
+              '.reveal',
+              { x: [0, 30, -30, 30, -30, 0] },
+              { type: 'spring', at: 1 },
+            ],
+          ],
+    ).then(() => onComplete({ clue, answer }));
   }, [clue, answer, animate, onComplete]);
 
   return (

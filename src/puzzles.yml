@@ -3,6 +3,7 @@
   year: 2016
   title: Films
   description: Compiled from best film lists made by the BFI and Film4, in order of rank.
+  color: "#F7CAC9"
   clues:
     - id: 1
       clue: Queer bandits doing the rounds
@@ -31,7 +32,7 @@
     - id: 7
       clue: A pageant hitherto presented
       answer: 46
-      description: A Night At The Opera Anagram of ‘A Pageant Hitherto’
+      description: Anagram of ‘A Pageant Hitherto’
     - id: 8
       clue: Something
       answer: 73
@@ -136,7 +137,7 @@
       answer: 18
     - id: 36
       clue: A♭
-      answer: 9
+      answer: 3
       description: A Flat
     - id: 37
       clue: Miles Per Damage
