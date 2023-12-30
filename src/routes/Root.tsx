@@ -7,10 +7,11 @@ import {
 } from '@chakra-ui/react';
 import { Link } from '@tanstack/react-router';
 import PUZZLES from '../puzzles.yml';
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
 import { orderBy } from 'lodash-es';
 import { useSettings } from '../SettingsProvider';
 import { neutral, neutralDark } from '../theme';
+import { motion } from 'framer-motion';
 
 const Root: React.FC = () => {
   const { blackAndWhite } = useSettings();
@@ -32,8 +33,15 @@ const Root: React.FC = () => {
     [],
   );
 
+  const container = useRef<HTMLDivElement>(null);
+
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      ref={container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <OrderedList as="div" m={0} px={0} py={3}>
         {orderBy(Object.values(PUZZLES), 'year', 'desc').map((puzzle) => (
           <ListItem

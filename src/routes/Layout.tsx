@@ -15,16 +15,14 @@ const TanStackRouterDevtools =
         })),
       );
 
-const Layout: React.FC = () => {
-  return (
-    <Suspense fallback={null}>
-      <ConfirmationProvider>
-        <Header />
-        <Outlet />
-        <TanStackRouterDevtools />
-      </ConfirmationProvider>
-    </Suspense>
-  );
-};
+const Layout: React.FC = () => (
+  <Suspense fallback={null}>
+    <ConfirmationProvider>
+      <Header />
+      <Outlet />
+      <TanStackRouterDevtools />
+    </ConfirmationProvider>
+  </Suspense>
+);
 
 export default Layout;

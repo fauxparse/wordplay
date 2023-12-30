@@ -98,6 +98,7 @@ const Puzzle: React.FC = () => {
 
   return (
     <Stack
+      as={motion.div}
       ref={container}
       pb={8}
       style={
@@ -122,6 +123,8 @@ const Puzzle: React.FC = () => {
         h: 8,
         zIndex: 1,
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
     >
       <Container
         pos="sticky"
