@@ -1123,159 +1123,156 @@
       answer:
       description: EN, lightened
   answers:
-    clue:
-    answer:
-    description:
-      - id: 1
-        answer: Breaking Bad
-      - id: 2
-        answer: Mad Men
-      - id: 3
-        answer: Atlanta
-      - id: 4
-        answer: Parks and Recreation
-      - id: 5
-        answer: The Americans
-      - id: 6
-        answer: The Good Place
-      - id: 7
-        answer: The Leftovers
-      - id: 8
-        answer: 30 Rock
-      - id: 9
-        answer: Fleabag
-      - id: 10
-        answer: BoJack Horseman
-      - id: 11
-        answer: Hannibal
-      - id: 12
-        answer: Crazy Ex-Girlfriend
-      - id: 13
-        answer: Rick and Morty
-      - id: 14
-        answer: Review
-      - id: 15
-        answer: Veep
-      - id: 16
-        answer: Justified
-      - id: 17
-        answer: Brooklyn Nine-Nine
-      - id: 18
-        answer: Enlightened
-      - id: 19
-        answer: The Great British Bake-Off
-      - id: 20
-        answer: Rectify
-      - id: 21
-        answer: Nathan For You
-      - id: 22
-        answer: Russian Doll
-      - id: 23
-        answer: Game of Thrones
-      - id: 24
-        answer: Key & Peele
-      - id: 25
-        answer: New Girl
-      - id: 26
-        answer: Succession
-      - id: 27
-        answer: Broad City
-      - id: 28
-        answer: You’re The Worst
-      - id: 29
-        answer: It’s Always Sunny in Philadelphia
-      - id: 30
-        answer: Documentary Now!
-      - id: 31
-        answer: One Day At A Time
-      - id: 32
-        answer: Steven Universe
-      - id: 33
-        answer: Pose
-      - id: 34
-        answer: Stranger Things
-      - id: 35
-        answer: Schitt’s Creek
-      - id: 36
-        answer: Fargo
-      - id: 37
-        answer: GLOW
-      - id: 38
-        answer: Archer
-      - id: 39
-        answer: Gravity Falls
-      - id: 40
-        answer: Adventure Time
-      - id: 41
-        answer: Sharp Objects
-      - id: 42
-        answer: Terriers
-      - id: 43
-        answer: Lodge 49
-      - id: 44
-        answer: Black Mirror
-      - id: 45
-        answer: American Vandal
-      - id: 46
-        answer: Killing Eve
-      - id: 47
-        answer: Orange Is The New Black
-      - id: 48
-        answer: Girls
-      - id: 49
-        answer: Better Things
-      - id: 50
-        answer: High Maintenance
-      - id: 51
-        answer: Big Mouth
-      - id: 52
-        answer: Treme
-      - id: 53
-        answer: Orphan Black
-      - id: 54
-        answer: Lady Dynamite
-      - id: 55
-        answer: Person of Interest
-      - id: 56
-        answer: Penny Dreadful
-      - id: 57
-        answer: Chernobyl
-      - id: 58
-        answer: Catastrophe
-      - id: 59
-        answer: Drunk History
-      - id: 60
-        answer: Fringe
-      - id: 61
-        answer: Tuca & Bertie
-      - id: 62
-        answer: Sense8
-      - id: 63
-        answer: Grey’s Anatomy
-      - id: 64
-        answer: The Crown
-      - id: 65
-        answer: Undone
-      - id: 66
-        answer: "O.J.: Made In America"
-      - id: 67
-        answer: Vida
-      - id: 68
-        answer: Last Week Tonight
-      - id: 69
-        answer: Banshee
-      - id: 70
-        answer: The Good Fight
-      - id: 71
-        answer: Over The Garden Wall
-      - id: 72
-        answer: Doctor Who
-      - id: 73
-        answer: This is Us
-      - id: 74
-        answer: Alias Grace
-      - id: 75
-        answer: Show Me A Hero
+    - id: 1
+      answer: Breaking Bad
+    - id: 2
+      answer: Mad Men
+    - id: 3
+      answer: Atlanta
+    - id: 4
+      answer: Parks and Recreation
+    - id: 5
+      answer: The Americans
+    - id: 6
+      answer: The Good Place
+    - id: 7
+      answer: The Leftovers
+    - id: 8
+      answer: 30 Rock
+    - id: 9
+      answer: Fleabag
+    - id: 10
+      answer: BoJack Horseman
+    - id: 11
+      answer: Hannibal
+    - id: 12
+      answer: Crazy Ex-Girlfriend
+    - id: 13
+      answer: Rick and Morty
+    - id: 14
+      answer: Review
+    - id: 15
+      answer: Veep
+    - id: 16
+      answer: Justified
+    - id: 17
+      answer: Brooklyn Nine-Nine
+    - id: 18
+      answer: Enlightened
+    - id: 19
+      answer: The Great British Bake-Off
+    - id: 20
+      answer: Rectify
+    - id: 21
+      answer: Nathan For You
+    - id: 22
+      answer: Russian Doll
+    - id: 23
+      answer: Game of Thrones
+    - id: 24
+      answer: Key & Peele
+    - id: 25
+      answer: New Girl
+    - id: 26
+      answer: Succession
+    - id: 27
+      answer: Broad City
+    - id: 28
+      answer: You’re The Worst
+    - id: 29
+      answer: It’s Always Sunny in Philadelphia
+    - id: 30
+      answer: Documentary Now!
+    - id: 31
+      answer: One Day At A Time
+    - id: 32
+      answer: Steven Universe
+    - id: 33
+      answer: Pose
+    - id: 34
+      answer: Stranger Things
+    - id: 35
+      answer: Schitt’s Creek
+    - id: 36
+      answer: Fargo
+    - id: 37
+      answer: GLOW
+    - id: 38
+      answer: Archer
+    - id: 39
+      answer: Gravity Falls
+    - id: 40
+      answer: Adventure Time
+    - id: 41
+      answer: Sharp Objects
+    - id: 42
+      answer: Terriers
+    - id: 43
+      answer: Lodge 49
+    - id: 44
+      answer: Black Mirror
+    - id: 45
+      answer: American Vandal
+    - id: 46
+      answer: Killing Eve
+    - id: 47
+      answer: Orange Is The New Black
+    - id: 48
+      answer: Girls
+    - id: 49
+      answer: Better Things
+    - id: 50
+      answer: High Maintenance
+    - id: 51
+      answer: Big Mouth
+    - id: 52
+      answer: Treme
+    - id: 53
+      answer: Orphan Black
+    - id: 54
+      answer: Lady Dynamite
+    - id: 55
+      answer: Person of Interest
+    - id: 56
+      answer: Penny Dreadful
+    - id: 57
+      answer: Chernobyl
+    - id: 58
+      answer: Catastrophe
+    - id: 59
+      answer: Drunk History
+    - id: 60
+      answer: Fringe
+    - id: 61
+      answer: Tuca & Bertie
+    - id: 62
+      answer: Sense8
+    - id: 63
+      answer: Grey’s Anatomy
+    - id: 64
+      answer: The Crown
+    - id: 65
+      answer: Undone
+    - id: 66
+      answer: "O.J.: Made In America"
+    - id: 67
+      answer: Vida
+    - id: 68
+      answer: Last Week Tonight
+    - id: 69
+      answer: Banshee
+    - id: 70
+      answer: The Good Fight
+    - id: 71
+      answer: Over The Garden Wall
+    - id: 72
+      answer: Doctor Who
+    - id: 73
+      answer: This is Us
+    - id: 74
+      answer: Alias Grace
+    - id: 75
+      answer: Show Me A Hero
 
 2020:
   year: 2020
