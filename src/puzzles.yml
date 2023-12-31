@@ -343,6 +343,7 @@
       answer: Man with a Movie Camera
     - id: 75
       answer: "Sunrise: A Song of Two Humans"
+
 2017:
   year: 2017
   title: Video games
@@ -564,3 +565,714 @@
       answer: Dota
     - id: 49
       answer: King’s Quest
+
+2018:
+  year: 2018
+  title: Musicals
+  description: |
+    Presented in alphabetical order.
+  color: "#5F4B8B"
+  clues:
+    - id: 1
+      clue: Tina
+      answer: 9
+      description: The word AINT is misbehavin’
+    - id: 2
+      clue: Airship
+      answer: 67
+      description: To air = to SHOW. Ship = BOAT
+    - id: 3
+      clue: Be born wealthy
+      answer: 40
+      description: "#bornrichordietrying"
+    - id: 4
+      clue: No German arrangement
+      answer: 56
+      description: ‘No’ in German is NEIN. Arrange it and you get...
+    - id: 5
+      clue: Puts me away, holding ring
+      answer: 66
+      description: SHELVES ME with a ring-shaped letter
+    - id: 6
+      clue: Between a femur and a tibia
+      answer: 10
+      description: A knee. Sorry.
+    - id: 7
+      clue: Large rabbits go to church
+      answer: 36
+      description: Hares pray.
+      credit: Guest question from Kirsty McGuire
+    - id: 8
+      clue: Revolutionary communist meets fascist paramilitaries
+      answer: 23
+      description: CHE (Guevara) + SS
+    - id: 9
+      clue: Condemn those who get pulled
+      answer: 27
+      description: Not as bad as the yank-ers
+    - id: 10
+      clue: He eats mutton and drinks tea
+      answer: 50
+      description: Man of Lamb and Cha
+    - id: 11
+      clue: Heh, eight
+      answer: 41
+      description: It’s quite literally in tHE HEIGHTs
+    - id: 12
+      clue: Desert animal, mostly hot
+      answer: 19
+      description: CAMEL + (h)OT
+    - id: 13
+      clue: Ritchie, Rag, Fawkes, Voodoo
+      answer: 33
+      description: Guys Ritchie and Fawkes, with Ragdoll and Voodoo Doll
+    - id: 14
+      clue: Monopoly property is missing a noblewoman
+      answer: 55
+      description: MAYFAIR missing A, followed by Lady
+    - id: 15
+      clue: Revitalised interior
+      answer: 30
+      description: rEVITAlised
+    - id: 16
+      clue: Where you keep half your nails
+      answer: 59
+      description: I think this speaks for itself
+    - id: 17
+      clue: Eyes went crossed; that’s unusual
+      answer: 71
+      description: Anagram of EYES WENT is SWEEEY T + ODD (unusual)
+    - id: 18
+      clue: ‘You met Ed and Evan Rachel?’ ‘Yes, I bumped...’
+      answer: 42
+      description: Ed Wood? Evan Rachel Wood? Well then, I would too.
+    - id: 19
+      clue: Run a meeting with no leader
+      answer: 35
+      description: CHAIR minus its leader (C)
+    - id: 20
+      clue: Laugh at 17th Century poet
+      answer: 37
+      description: Ha! Milton.
+    - id: 21
+      clue: Refrain
+      answer: 5
+      description: eg. ‘Hey now, you’re an all star’
+    - id: 22
+      clue: Cold? Turn on front light
+      answer: 21
+      description: Cold = C (like on a cold tap), turn on = AROUSE, the front of LIGHT = L
+    - id: 23
+      clue: How Florence stopped being a solo act
+      answer: 8
+      description: (Although this isn’t an accurate history of Florence and the Machine)
+    - id: 24
+      clue: Slughorn’s boutique
+      answer: 49
+      description: If Horace Slughorn from Harry Potter owned a small store?
+    - id: 25
+      clue: Adam gets lit and goes back
+      answer: 51
+      description: ADAM gets LIT = AD(LIT)AM, then read it backwards
+    - id: 26
+      clue: Alabama’s capital
+      answer: 32
+      description: The capital of Alabama is Montgomery, which Monty is short for
+    - id: 27
+      clue: Pussy is naked inside
+      answer: 18
+      description: No, it’s not rude. CAT with BARE inside it.
+    - id: 28
+      clue: X.I. Middleton
+      answer: 47
+      description: X = KISS, I = ME, Middleton = KATE
+    - id: 29
+      clue: ‘Bond, what’s another word for a location?’
+      answer: 29
+      description: Bonus point if someone did a Connery impression when you solved this one
+    - id: 30
+      clue: Missed two games then got one under par
+      answer: 17
+    - id: 31
+      clue: Fashionable freight
+      answer: 24
+      description: Chic Cargo
+    - id: 32
+      clue: Migrate with difficulty
+      answer: 63
+      description: Anagram of MIGRATE
+    - id: 33
+      clue: Disregard enemies
+      answer: 65
+      description: There’s a secret hidden word in disreGARD ENemies
+    - id: 34
+      clue: ... or d’yer only see girls?
+      answer: 44
+      description: D’yer see boys?
+    - id: 35
+      clue: People who write articles
+      answer: 62
+      description: Words like ‘the’, ‘an’, or ‘a’ are called articles, so the people who make them are...
+    - id: 36
+      clue: Gay apes eye some seconds
+      answer: 34
+      description: Take every second letter of GaYaPeSeYe
+    - id: 37
+      clue: Succubi
+      answer: 28
+      description: Succubi are mythological women who appear during sleep
+    - id: 38
+      clue: A change of mind
+      answer: 7
+    - id: 39
+      clue: La BOOheme
+      answer: 60
+      description: You try coming up with ghost-themed opera puns
+    - id: 40
+      clue: Rex ego
+      answer: 46
+      description: Good chance to brush up on your Latin
+    - id: 41
+      clue: What I’ll probably do for the rest of my life
+      answer: 64
+      description: I mean, I chose to work in the arts
+    - id: 42
+      clue: Two donkeys in circus finale
+      answer: 13
+      description: Ass + ass + in + s [the last letter of circus]
+    - id: 43
+      clue: Us, turned manic after them
+      answer: 54
+      description: THEM + US + ICMAN (anagram of MANIC)
+    - id: 44
+      clue: I ate all the cake, but none...
+      answer: 57
+      description: Of the icing? Close enough.
+      credit: Guest question from Matt Powell
+    - id: 45
+      clue: The Cadbury Foundation
+      answer: 72
+      description: I don’t know if Cadbury actually runs a charity though.
+    - id: 46
+      clue: Avoid Ho Chi Minh City
+      answer: 53
+      description: But really, don’t. I hear it’s lovely!
+    - id: 47
+      clue: Liebovitz, fetch Habermas
+      answer: 11
+      description: ‘Your gun’, ‘Jurgen’, same same. I laughed for half an hour after coming up with this.
+    - id: 48
+      clue: Oil a corner
+      answer: 20
+      description: An anagram of CAROLINE OR
+    - id: 49
+      clue: 1600 – 0400 GMT
+      answer: 6
+      description: Factually accurate!
+    - id: 50
+      clue: Two
+      answer: 26
+      description: …three’s a crowd
+  answers:
+    - id: 1
+      answer: "1776"
+    - id: 2
+      answer: 110 in the Shade
+    - id: 3
+      answer: The 25th Annual Putnam County Spelling Bee
+    - id: 4
+      answer: 42nd Street
+    - id: 5
+      answer: A Chorus Line
+    - id: 6
+      answer: A Day in Hollywood, A Night in the Ukraine
+    - id: 7
+      answer: A New Brain
+    - id: 8
+      answer: Adding Machine
+    - id: 9
+      answer: Ain’t Misbehavin’
+    - id: 10
+      answer: Annie
+    - id: 11
+      answer: Annie Get Your Gun
+    - id: 12
+      answer: Anything Goes
+    - id: 13
+      answer: Assassins
+    - id: 14
+      answer: Avenue Q
+    - id: 15
+      answer: The Best Little Whorehouse in Texas
+    - id: 16
+      answer: The Book of Mormon
+    - id: 17
+      answer: Bye Bye Birdie
+    - id: 18
+      answer: Cabaret
+    - id: 19
+      answer: Camelot
+    - id: 20
+      answer: Caroline, or Change
+    - id: 21
+      answer: Carousel
+    - id: 22
+      answer: Cats
+    - id: 23
+      answer: Chess
+    - id: 24
+      answer: Chicago
+    - id: 25
+      answer: City of Angels
+    - id: 26
+      answer: Company
+    - id: 27
+      answer: Damn Yankees
+    - id: 28
+      answer: Dreamgirls
+    - id: 29
+      answer: The Drowsy Chaperone
+    - id: 30
+      answer: Evita
+    - id: 31
+      answer: Fiddler on the Roof
+    - id: 32
+      answer: The Full Monty
+    - id: 33
+      answer: Guys and Dolls
+    - id: 34
+      answer: Gypsy
+    - id: 35
+      answer: Hair
+    - id: 36
+      answer: Hairspray
+    - id: 37
+      answer: Hamilton
+    - id: 38
+      answer: Hedwig and the Angry Inch
+    - id: 39
+      answer: Hello, Dolly!
+    - id: 40
+      answer: How to Succeed in Business Without Really Trying
+    - id: 41
+      answer: In the Heights
+    - id: 42
+      answer: Into the Woods
+    - id: 43
+      answer: Jerry Springer – The Opera
+    - id: 44
+      answer: Jersey Boys
+    - id: 45
+      answer: Jesus Christ Superstar
+    - id: 46
+      answer: The King and I
+    - id: 47
+      answer: Kiss Me Kate
+    - id: 48
+      answer: Les Miserables
+    - id: 49
+      answer: Little Shop of Horrors
+    - id: 50
+      answer: Man of La Mancha
+    - id: 51
+      answer: Matilda
+    - id: 52
+      answer: Merrily We Roll Along
+    - id: 53
+      answer: Miss Saigon
+    - id: 54
+      answer: The Music Man
+    - id: 55
+      answer: My Fair Lady
+    - id: 56
+      answer: Nine
+    - id: 57
+      answer: Of Thee I Sing
+    - id: 58
+      answer: Oklahoma!
+    - id: 59
+      answer: On Your Toes
+    - id: 60
+      answer: The Phantom of the Opera
+    - id: 61
+      answer: Priscilla, Queen of the Desert
+    - id: 62
+      answer: The Producers
+    - id: 63
+      answer: Ragtime
+    - id: 64
+      answer: Rent
+    - id: 65
+      answer: The Secret Garden
+    - id: 66
+      answer: She Loves Me
+    - id: 67
+      answer: Show Boat
+    - id: 68
+      answer: The Sound of Music
+    - id: 69
+      answer: Sunday in the Park with George
+    - id: 70
+      answer: Sunset Boulevard
+    - id: 71
+      answer: Sweeney Todd
+    - id: 72
+      answer: Sweet Charity
+    - id: 73
+      answer: Urinetown
+    - id: 74
+      answer: West Side Story
+    - id: 75
+      answer: Wicked
+
+2019:
+  year: 2019
+  title: TV Series
+  description: |
+    The following list contains 75 of The AV Club’s top 100 TV series of the 2010s.
+  color: "#FF6F61"
+  clues:
+    - id: 1
+      clue: A gentleman diner won’t, but a…
+      answer: 54
+      description: A gentleman diner won’t, but a lady diner might
+    - id: 2
+      clue: The night before a lot of money
+      answer: 46
+      description: The night before (eve) a lot of money (a killing)
+    - id: 3
+      clue: Irregular meter
+      answer: 52
+      description: Anagram of ‘meter’
+    - id: 4
+      clue: Both sides met by text
+      answer: 16
+      description: The document alignment where the text is spaced to occupy the full width
+    - id: 5
+      clue: Red Hot Chili Peppers merchandise
+      answer: 9
+      description: Flea is the bass player for the Red Hot Chili Peppers
+    - id: 6
+      clue: Professional and their international governing body
+      answer: 72
+      description: Who = World Health Organisation
+    - id: 7
+      clue: Loud Ben Affleck film
+      answer: 36
+      description: F (for Forte) + Argo
+    - id: 8
+      clue: Electronics brand protests
+      answer: 41
+    - id: 9
+      clue: Why Gritty needs a hat
+      answer: 29
+      description: You may have needed to google who Gritty is. You’re welcome.
+    - id: 10
+      clue: Label on a juice bottle from NY
+      answer: 66
+    - id: 11
+      clue: Correct if you’re content
+      answer: 20
+      description: Hidden inside ‘corRECT IF You’re’
+    - id: 12
+      clue: Sick of plot’s boundary
+      answer: 71
+      description: Sick of (over) the garden (plot) wall (boundary)
+    - id: 13
+      clue: Sonny is honourabyl, and…
+      answer: 57
+      description: Is this pun worse than the actual Chernobyl accident? Who can say.
+    - id: 14
+      clue: This venue has been slimed
+      answer: 6
+      description: Apologies
+    - id: 15
+      clue: Smashing Michael Jackson’s record
+      answer: 1
+    - id: 16
+      clue: Kukla
+      answer: 22
+      description: One of the rare questions where the answer is technically the question
+    - id: 17
+      clue: Games between Barcelona & Sydney
+      answer: 3
+      description: 1996 Summer Olympics
+    - id: 18
+      clue: These deliveries aren’t right
+      answer: 7
+      description: Deliveries (overs) aren’t right (left)
+    - id: 19
+      clue: …then a Claudio and a Benedick
+      answer: 75
+      description: Any Much Ado fans in tonight?
+    - id: 20
+      clue: Rosa making it again
+      answer: 4
+      description: Rosa (Parks) and Recreation (making it again)
+    - id: 21
+      clue: Sirius’s parents passed away
+      answer: 53
+      description: Sirius Black, from Harry Potter, in fact fell out with his parents Orion and Walburga after he was sorted into Gryffindor, against family tradition. Of course.
+    - id: 22
+      clue: One who calculates loan repayments
+      answer: 55
+    - id: 23
+      clue: Ve n i c e
+      answer: 27
+    - id: 24
+      clue: Mr Pratchett makes a mistake
+      answer: 42
+      description: Terry errs
+    - id: 25
+      clue: Is twice entered like so
+      answer: 73
+      description: Th(is + is)us
+    - id: 26
+      clue: Gambling equipment
+      answer: 49
+    - id: 27
+      clue: The top of my head
+      answer: 64
+      description: Y’know, what Jack broke?
+    - id: 28
+      clue: Boxer portraying Ms. Kelly
+      answer: 74
+      description: Muhammad) Ali as (plays) Grace (Kelly).
+      credit: Thanks to Kieran Boyd for suggesting this one.
+    - id: 29
+      clue: Break up near a chemist
+      answer: 5
+      description: Anagram (break up) of ‘near a chemist’
+    - id: 30
+      clue: Jagger with fresh drink for Spooner
+      answer: 13
+      description: A spoonerism of Mick and raw tea
+    - id: 31
+      clue: Best way to open an advent calendar
+      answer: 31
+      description: Unless you’re buying them in bulk the day after Christmas, in which case go for your life.
+    - id: 32
+      clue: Endless irritation from behind
+      answer: 15
+      description: Endless irritation (Peeve, minus the last letter) from behind (reverse the letters)
+    - id: 33
+      clue: Time set aside for blowjobs
+      answer: 26
+      description: Sorry
+    - id: 34
+      clue: I stand in for a comeback from Sigourney
+      answer: 14
+      description: Sigourney = Weaver. I stand in for a = Weiver. Comeback = Review.
+    - id: 35
+      clue: Equal parts black and white
+      answer: 63
+    - id: 36
+      clue: Extremely grammatical overview
+      answer: 37
+      description: Take the extremes of Grammatical (GL) and Overview (OW)
+    - id: 37
+      clue: More pointed
+      answer: 38
+    - id: 38
+      clue: Peach market, amber sheep, etc
+      answer: 47
+      description: It was easy to find phrases with ‘black’ in them, hard to find non-ludicrous synonyms for ‘orange’.
+    - id: 39
+      clue: Batman villain kidnaps woman
+      answer: 69
+      description: Bane, with ‘she’ in the middle
+    - id: 40
+      clue: Don’t quite submit 50
+      answer: 43
+    - id: 41
+      clue: Jewellery covered in iron
+      answer: 60
+      description: ‘Ring’ with Fe (iron) around it.
+    - id: 42
+      clue: My moggy won a prize
+      answer: 58
+      description: Cat has trophy. This is a reference to an old Tim Brook-Taylor joke from I’m Sorry I Haven’t A Clue. RIP.
+    - id: 43
+      clue: Internally undividable
+      answer: 67
+      description: undiVIDAble
+    - id: 44
+      clue: …and I’m the frankfurter
+      answer: 28
+    - id: 45
+      clue: Endoxyla cinereus will get you, finally
+      answer: 51
+      description: A Big Moth with the last letter of ‘you’
+    - id: 46
+      clue: I haven’t met the Cat in the Hat’s sidekicks
+      answer: 34
+    - id: 47
+      clue: Spinner starting the cricket’s order
+      answer: 35
+      description: First letter of ‘spinner’ + anagram of ‘the crickets’.
+      credit: Thanks to Kirsty McGuire for suggesting this one!
+    - id: 48
+      clue: Taking more drugs to avoid sobriety
+      answer: 50
+    - id: 49
+      clue: 135°, 0°, 135°, 8
+      answer: 62
+      description: SE + N + SE + 8
+    - id: 50
+      clue: EN
+      answer:
+      description: EN, lightened
+  answers:
+    clue:
+    answer:
+    description:
+      - id: 1
+        answer: Breaking Bad
+      - id: 2
+        answer: Mad Men
+      - id: 3
+        answer: Atlanta
+      - id: 4
+        answer: Parks and Recreation
+      - id: 5
+        answer: The Americans
+      - id: 6
+        answer: The Good Place
+      - id: 7
+        answer: The Leftovers
+      - id: 8
+        answer: 30 Rock
+      - id: 9
+        answer: Fleabag
+      - id: 10
+        answer: BoJack Horseman
+      - id: 11
+        answer: Hannibal
+      - id: 12
+        answer: Crazy Ex-Girlfriend
+      - id: 13
+        answer: Rick and Morty
+      - id: 14
+        answer: Review
+      - id: 15
+        answer: Veep
+      - id: 16
+        answer: Justified
+      - id: 17
+        answer: Brooklyn Nine-Nine
+      - id: 18
+        answer: Enlightened
+      - id: 19
+        answer: The Great British Bake-Off
+      - id: 20
+        answer: Rectify
+      - id: 21
+        answer: Nathan For You
+      - id: 22
+        answer: Russian Doll
+      - id: 23
+        answer: Game of Thrones
+      - id: 24
+        answer: Key & Peele
+      - id: 25
+        answer: New Girl
+      - id: 26
+        answer: Succession
+      - id: 27
+        answer: Broad City
+      - id: 28
+        answer: You’re The Worst
+      - id: 29
+        answer: It’s Always Sunny in Philadelphia
+      - id: 30
+        answer: Documentary Now!
+      - id: 31
+        answer: One Day At A Time
+      - id: 32
+        answer: Steven Universe
+      - id: 33
+        answer: Pose
+      - id: 34
+        answer: Stranger Things
+      - id: 35
+        answer: Schitt’s Creek
+      - id: 36
+        answer: Fargo
+      - id: 37
+        answer: GLOW
+      - id: 38
+        answer: Archer
+      - id: 39
+        answer: Gravity Falls
+      - id: 40
+        answer: Adventure Time
+      - id: 41
+        answer: Sharp Objects
+      - id: 42
+        answer: Terriers
+      - id: 43
+        answer: Lodge 49
+      - id: 44
+        answer: Black Mirror
+      - id: 45
+        answer: American Vandal
+      - id: 46
+        answer: Killing Eve
+      - id: 47
+        answer: Orange Is The New Black
+      - id: 48
+        answer: Girls
+      - id: 49
+        answer: Better Things
+      - id: 50
+        answer: High Maintenance
+      - id: 51
+        answer: Big Mouth
+      - id: 52
+        answer: Treme
+      - id: 53
+        answer: Orphan Black
+      - id: 54
+        answer: Lady Dynamite
+      - id: 55
+        answer: Person of Interest
+      - id: 56
+        answer: Penny Dreadful
+      - id: 57
+        answer: Chernobyl
+      - id: 58
+        answer: Catastrophe
+      - id: 59
+        answer: Drunk History
+      - id: 60
+        answer: Fringe
+      - id: 61
+        answer: Tuca & Bertie
+      - id: 62
+        answer: Sense8
+      - id: 63
+        answer: Grey’s Anatomy
+      - id: 64
+        answer: The Crown
+      - id: 65
+        answer: Undone
+      - id: 66
+        answer: "O.J.: Made In America"
+      - id: 67
+        answer: Vida
+      - id: 68
+        answer: Last Week Tonight
+      - id: 69
+        answer: Banshee
+      - id: 70
+        answer: The Good Fight
+      - id: 71
+        answer: Over The Garden Wall
+      - id: 72
+        answer: Doctor Who
+      - id: 73
+        answer: This is Us
+      - id: 74
+        answer: Alias Grace
+      - id: 75
+        answer: Show Me A Hero
