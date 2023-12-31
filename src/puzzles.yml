@@ -1276,3 +1276,694 @@
         answer: Alias Grace
       - id: 75
         answer: Show Me A Hero
+
+2020:
+  year: 2020
+  title: Books
+  description: |
+    The following titles were on The Guardian’s list of 100 best books of the 21st Century.
+  color: "#0F4C81"
+  clues:
+    - id: 1
+      clue: A Yell
+      answer: 10
+    - id: 2
+      clue: Giles had to stop being quiet
+      answer: 2
+      description: "Gile(sh)ad: take away the ‘sh’ to stop being quiet"
+    - id: 3
+      clue: The anly thang better than har blouse is…
+      answer: 65
+    - id: 4
+      clue: Where rabbits go shopping, according to Spooner
+      answer: 37
+      description: Aka the bunny mall
+    - id: 5
+      clue: Stuart’s memoir
+      answer: 78
+      description: Stuart Little, geddit?
+    - id: 6
+      clue: Frida and Sunda
+      answer: 59
+      description: Frida(y) and Sunda(y)
+    - id: 7
+      clue: Aristocrat one mentored at the centre
+      answer: 36
+      description: "Aristocr(at one ment)ored: ‘at the centre’ telling you to look for hidden words"
+    - id: 8
+      clue: What’s in d’gallery
+      answer: 49
+      description: I’d say I’m sorry but apologising means you won’t do it again
+    - id: 9
+      clue: The Emerald Aisle
+      answer: 32
+    - id: 10
+      clue: Hugs and kisses
+      answer: 71
+      description: xoxo
+    - id: 11
+      clue: Usually after the main payment
+      answer: 77
+    - id: 12
+      clue: Eat the Rich (a US comedian)
+      answer: 1
+      description: Eat (WOLF) + Rich HALL, a US comedian
+    - id: 13
+      clue: C, F or T
+      answer: 24
+    - id: 14
+      clue: I ____ present in a pretty bow
+      answer: 25
+    - id: 15
+      clue: Sarah and Louise Watts
+      answer: 45
+      description: Watts being the unit for measuring power. Louise Watts also happens to be a singer from Chumbawumba.
+    - id: 16
+      clue: A letter from Mr. Kawara
+      answer: 51
+      description: On Kawara is a great conceptual artist, whose letters would of course be On Writing
+    - id: 17
+      clue: Two Fathers
+      answer: 70
+      description: e.g. Andrew Scott in Fleabag
+    - id: 18
+      clue: Anaemia or Leukocytosis
+      answer: 72
+      credit: Guest clue from Kieran Boyd
+    - id: 19
+      clue: ‘S’ is to touch down
+      answer: 44
+      description: S (Small) is land
+    - id: 20
+      clue: Try hearing everyone sing Imagine (e.g. early beginners)
+      answer: 75
+      description: ‘Beginners’ of each word in the clue
+    - id: 21
+      clue: A group of contestants on The Weakest Link
+      answer: 75
+    - id: 22
+      clue: Former Vice President swallows anger, upset
+      answer: 31
+      description: "Former (EX) Vice President (PENCE) swallows IRE, backwards: EX-P(ERI)ENCE"
+    - id: 23
+      clue: Hit it, Jack!
+      answer: 16
+      description: And don’t you come back no more…
+    - id: 24
+      clue: A Posh child
+      answer: 43
+      description: Brooklyn is a child of Victoria ‘Posh Spice’ Beckham
+    - id: 25
+      clue: Franki Valli
+      answer: 63
+      description: Franki Valli performed with the Four Seasons (the band, not the hotel or landscaping centre)
+    - id: 26
+      clue: Neil
+      answer: 30
+      description: t’s the letters from LINE, but they’ve been put out
+    - id: 27
+      clue: Those are the wrong charged atoms, these are…
+      answer: 15
+      description: Correct. Ions. Corrections.
+    - id: 28
+      clue: El Gringo Loco
+      answer: 52
+      description: Anagram (loco) of El Gringo
+    - id: 29
+      clue: Where my clothes are
+      answer: 7
+      credit: Thanks to Matt Powell for help finessing this one
+    - id: 30
+      clue: ‘He’s no monster, Gaston; you are!’
+      answer: 33
+      description: Y’know, Belle from Beauty and the Beast
+    - id: 31
+      clue: Flying shot oddly lacking
+      answer: 74
+      description: fLyInG sHoT, lacking all the odd letters
+    - id: 32
+      clue: Uranium and Manganese after Gold, the last element
+      answer: 8
+      description: Gold (AU) and the last letter of element (T) with Uranium (U) and Manganese (MN)
+    - id: 33
+      clue: ‘With a T’
+      answer: 67
+      description: An early draft for this clue was ‘with a giant spider puppet’
+    - id: 34
+      clue: Magazine from the op shop
+      answer: 3
+    - id: 35
+      clue: Blimey, a queue!
+      answer: 66
+      description: Cor, a line!
+    - id: 36
+      clue: "Horse head bling: these can all go…"
+      answer: 48
+      description: Warhorse, Warhead, Warbling
+    - id: 37
+      clue: The opposite of a sundial
+      answer: 41
+    - id: 38
+      clue: San Marino on day demonstrators were hidden
+      answer: 21
+      description: "Another hidden word: Meri(no on day demon)strators"
+    - id: 39
+      clue: Stop, bend to the right and hump the D
+      answer: 62
+      description: Stop and Hump are road signs, the end of ‘the world’ is D.
+      credit: Thanks again to Kieran.
+    - id: 40
+      clue: Mon Oncle director is in sight
+      answer: 73
+      description: Jacques TATI in VISION
+    - id: 41
+      clue: Organise everyone to be proud of the word ‘lavished’
+      answer: 60
+      description: ‘Organise’ indicating an anagram
+    - id: 42
+      clue: Kanendin
+      answer: 22
+      description: ‘Go on’
+    - id: 43
+      clue: Juliette Danielle, Greg Sestero, Tommy Wiseau (arguably)
+      answer: 69
+      description: Actors in the cult film The Room
+    - id: 44
+      clue: Run off with Grace before double date starts – I’m extremely excited
+      answer: 13
+      description: Run off with (NICK) + grace (ELAN) + starts of double date (DD) + I’m + the extremes of ‘excited’ (ED)
+    - id: 45
+      clue: Get to third base with the Eleventh Doctor
+      answer: 14
+      description: Allons-y!
+    - id: 46
+      clue: Story touching a 70s rock band
+      answer: 12
+    - id: 47
+      clue: Don’t upgrade to Windows XP!
+      answer: 4
+      description: ME being the last version of Windows before XP
+    - id: 48
+      clue: Phonetically, E and Y contribute…
+      answer: 58
+      description: Similar words include Queue, Arty, Excel, Icy
+    - id: 49
+      clue: ‘Pee ends’
+      answer: 19
+      description: Go on, say it
+    - id: 50
+      clue: You, for doing this puzzle
+      answer: 11
+      description: <3 <3 <3
+  answers:
+    - id: 1
+      answer: Wolf Hall
+    - id: 2
+      answer: Gilead
+    - id: 3
+      answer: Secondhand Time
+    - id: 4
+      answer: Never Let Me Go
+    - id: 5
+      answer: Austerlitz
+    - id: 6
+      answer: Amber Spyglass
+    - id: 7
+      answer: Between the World and Me
+    - id: 8
+      answer: Autumn
+    - id: 9
+      answer: Cloud Atlas
+    - id: 10
+      answer: Half of a Yellow Sun
+    - id: 11
+      answer: My Brilliant Friend
+    - id: 12
+      answer: Plot Against America
+    - id: 13
+      answer: Nickel and Dimed
+    - id: 14
+      answer: Fingersmith
+    - id: 15
+      answer: The Corrections
+    - id: 16
+      answer: The Road
+    - id: 17
+      answer: Shock Doctrine
+    - id: 18
+      answer: Curious Incident of the Dog in the Night-Time
+    - id: 19
+      answer: Sapiens
+    - id: 20
+      answer: Tenth of December
+    - id: 21
+      answer: Noonday Demon
+    - id: 22
+      answer: A Visit from the Goon Squad
+    - id: 23
+      answer: Normal People
+    - id: 24
+      answer: Capital in the Twenty-First Century
+    - id: 25
+      answer: Rapture
+    - id: 26
+      answer: A Death in the Family
+    - id: 27
+      answer: Underground Railroad
+    - id: 28
+      answer: Argonauts
+    - id: 29
+      answer: Fun Home
+    - id: 30
+      answer: Outline
+    - id: 31
+      answer: Experience
+    - id: 32
+      answer: The Green Road
+    - id: 33
+      answer: Line of Beauty
+    - id: 34
+      answer: White Teeth
+    - id: 35
+      answer: Year of Magical Thinking
+    - id: 36
+      answer: Atonement
+    - id: 37
+      answer: Moneyball
+    - id: 38
+      answer: Levels of Life
+    - id: 39
+      answer: Human Chain
+    - id: 40
+      answer: Persepolis
+    - id: 41
+      answer: Night Watch
+    - id: 42
+      answer: Why Be Happy When You Could Be Normal?
+    - id: 43
+      answer: Brooklyn
+    - id: 44
+      answer: Small Island
+    - id: 45
+      answer: Women & Power
+    - id: 46
+      answer: The Omnivore’s Dilemma
+    - id: 47
+      answer: Underland
+    - id: 48
+      answer: Postwar
+    - id: 49
+      answer: Dart
+    - id: 50
+      answer: Mother’s Milk
+    - id: 51
+      answer: On Writing
+    - id: 52
+      answer: Gone Girl
+    - id: 53
+      answer: The Silence of the Girls
+    - id: 54
+      answer: The Constant Gardener
+    - id: 55
+      answer: The Infatuations
+    - id: 56
+      answer: Notes on a Scandal
+    - id: 57
+      answer: Age of Surveillance Capitalism
+    - id: 58
+      answer: Nothing to Envy
+    - id: 59
+      answer: Days Without End
+    - id: 60
+      answer: Drive Your Plow Over the Bones of the Dead
+    - id: 61
+      answer: Thinking, Fast and Slow
+    - id: 62
+      answer: Signs Preceding the End of the World
+    - id: 63
+      answer: Fifth Season
+    - id: 64
+      answer: The Spirit Level
+    - id: 65
+      answer: Harvest
+    - id: 66
+      answer: Coraline
+    - id: 67
+      answer: Tell Me How It Ends 68 Cost of Living
+    - id: 69
+      answer: Adults in the Room 70 Priestdaddy
+    - id: 71
+      answer: Noughts & Crosses 72 Bad Blood
+    - id: 73
+      answer: Visitation
+    - id: 74
+      answer: Light
+    - id: 75
+      answer: The Siege
+    - id: 76
+      answer: Darkmans
+    - id: 77
+      answer: The Tipping Point 78 A Little Life
+    - id: 79
+      answer: Broken Glass
+
+2021:
+  year: 2021
+  title: Agatha Christie Novels
+  description: |
+    The following are all novels published by Agatha Christie.
+  color: "#F8E12D"
+  clues:
+    - id: 1
+      clue: Payment you get for 9 marmalade sandwiches at 50p each
+      answer: 56
+      description: That bear loves his marmalade sandwiches.
+    - id: 2
+      clue: Hugh Laurie’s medical drama
+      answer: 44
+    - id: 3
+      clue: Father keeps crows at his place
+      answer: 10
+    - id: 4
+      clue: They have time on their hands
+      answer: 61
+    - id: 5
+      clue: Butcher isn’t playing hard-to-get
+      answer: 28
+      description: To butcher is to murder, yeah?
+    - id: 6
+      clue: Whistler’s Moth
+      answer: 17
+      description: If it were finished, it’d be Whistler’s Mother
+    - id: 7
+      clue: The queer romance with Harry
+      answer: 1
+      description: It’s good fun to watch old films and see stuffy old men say ‘How terribly queer!’ when something mysterious happens.
+    - id: 8
+      clue: Stiff erection with no practical use
+      answer: 54
+      description: Stiff = Corpse, Folly = Decorative building, usually in the grounds of some rich person’s estate
+    - id: 9
+      clue: Mount Blanc
+      answer: 59
+      description: Blanc = White, Mount = Horse
+    - id: 10
+      clue: Why is Thomas sad?
+      answer: 8
+      description: Presumably Sir Topham Hatt was mean to him
+    - id: 11
+      clue: The Fringe
+      answer: 36
+      description: If you move the letters of ‘finger’ you get ‘fringe’
+    - id: 12
+      clue: Word riddle (eg. Sea Arrangement)
+      answer: 15
+      description: ‘Arrangement’ tells you it’s an anagram of ‘Word riddle eg. Sea’
+    - id: 13
+      clue: Villainy lurks beneath Murdoch paper
+      answer: 32
+    - id: 14
+      clue: He was busy founding Snapchat
+      answer: 18
+      description: Or more accurately, Evan S
+    - id: 15
+      clue: Lad laughter (sad laughter) with Noël
+      answer: 49
+      description: The trick here’s to read Noël out loud, so it becomes ‘No L’
+    - id: 16
+      clue: Chill, Sleep, Short and Lebowski
+      answer: 7
+      description: The Big Chill, The Big Sleep, The Big Short, The Big Lebowski
+    - id: 17
+      clue: Arm herder
+      answer: 45
+      description: ‘Arm herder’ more or less sounds like…
+      credit: Guest clue from Kieran Boyd.
+    - id: 18
+      clue: Pain from ground bones
+      answer: 11
+      description: Bread in French is ‘pain’. And of course a giant will grind your bones to make his bread…
+    - id: 19
+      clue: …but netted mum instead
+      answer: 46
+    - id: 20
+      clue: Comedian McDonald (1959–2021)
+      answer: 33
+    - id: 21
+      clue: He’s in the coffee clubs
+      answer: 4
+      description: Coffee is a shade of brown, and clubs is a suit in cards
+    - id: 22
+      clue: Did you make her?
+      answer: 62
+      description: If you say ‘Did you make her’ casually and quickly enough, it sounds like the country called…?
+    - id: 23
+      clue: Asphyxiation by choking or assault by chainsaw, for example
+      answer: 21
+      description: They’re both acronyms
+    - id: 24
+      clue: Sandra in Mambo No. 5
+      answer: 64
+      description: ‘I like Angela, Pamela, Sandra and Rita’
+    - id: 25
+      clue: Quarantine me, sister, inside
+      answer: 69
+      description: QuarantiNE ME SISter (inside tells you to look within the words)
+    - id: 26
+      clue: Disappeared down the well
+      answer: 38
+    - id: 27
+      clue: How narcissists practice kissing
+      answer: 48
+    - id: 28
+      clue: The toes of one foot
+      answer: 35
+      description: Wee wee wee wee
+    - id: 29
+      clue: Nice day
+      answer: 40
+      description: Sparkling tells you it’s an anagram of Cyanide
+    - id: 30
+      clue: Meeting Queensland’s health and ambulance minister, taking drug
+      answer: 26
+      description: A meeting with Yvette D’Ath, then add a drug (E) in the middle
+    - id: 31
+      clue: …come the gameseral
+      answer: 50
+      description: It’s all Fun and Games…
+    - id: 32
+      clue: Making a killing from bonds
+      answer: 3
+    - id: 33
+      clue: Whiskey stored in a pool table
+      answer: 51
+    - id: 34
+      clue: Clay Persian stool
+      answer: 58
+      description: ‘Clay’ and ‘Stool’ can both be followed by Pigeon, and ‘Persian’ is a type of cat
+    - id: 35
+      clue: Dufinite
+      answer: 71
+      description: Definite is to Dufinite as Certain is to Curtain
+    - id: 36
+      clue: If you don’t like Ernie Ewe’s house, trying staying...
+      answer: 63
+      description: At Bertram’s Hotel
+    - id: 37
+      clue: Elle Macpherson’s Dewey number
+      answer: 34
+    - id: 38
+      clue: Wood, boner, or happy ending on moor
+      answer: 53
+      description: HICKORY (wood) DICK (boner) OR (or) Y (ending of ‘happy’) DOCK (to moor)
+    - id: 39
+      clue: Bobby Nelson
+      answer: 12
+      description: Lord Admiral Horatio Nelson, of course
+    - id: 40
+      clue: There’s torture in The Frogs, but no…
+      answer: 20
+      description: How well do you know your Aristophanes?
+    - id: 41
+      clue: In which Liam Neeson uses a particular set of drainage skills
+      answer: 42
+      credit: Courtesy of Kieran Boyd
+    - id: 42
+      clue: "Jumbled renter’s mix-up: he enters door"
+      answer: 16
+      description: Another beloved, unnecessarily long anagram, indicated by ‘Jumbled’
+    - id: 43
+      clue: King and Queen are up for discussion
+      answer: 23
+    - id: 44
+      clue: Imminent
+      answer: 65
+      description: Without an ending, ‘night’ becomes ‘nigh’
+    - id: 45
+      clue: You could deal according to guilt…
+      answer: 57
+    - id: 46
+      clue: 80% of an elephant watcher
+      answer: 24
+      description: ‘Dumb’ is 80% of ‘Dumbo’
+    - id: 47
+      clue: Aaron and Theodosia’s rumpus room
+      answer: 55
+      description: The Burr Den. Thanks again to Kieran
+    - id: 48
+      clue: Down County emptied by the media
+      answer: 30
+      description: Down = Sad, CY = County having been emptied, Media = Press
+    - id: 49
+      clue: "Where /?;:P is heading"
+      answer: 37
+      description: Look at your keyboard!
+    - id: 50
+      clue: TE
+      answer: 41
+      description: TE is THE, but hollow
+  answers:
+    - id: 1
+      answer: The Mysterious Affair at Styles
+    - id: 2
+      answer: The Secret Adversary
+    - id: 3
+      answer: The Murder on the Links
+    - id: 4
+      answer: The Man in the Brown Suit
+    - id: 5
+      answer: The Secret of Chimneys
+    - id: 6
+      answer: The Murder of Roger Ackroyd
+    - id: 7
+      answer: The Big Four
+    - id: 8
+      answer: The Mystery of the Blue Train
+    - id: 9
+      answer: The Seven Dials Mystery
+    - id: 10
+      answer: The Murder at the Vicarage
+    - id: 11
+      answer: Giant’s Bread
+    - id: 12
+      answer: The Floating Admiral
+    - id: 13
+      answer: The Sittaford Mystery
+    - id: 14
+      answer: Peril at End House
+    - id: 15
+      answer: Lord Edgware Dies
+    - id: 16
+      answer: Murder on the Orient Express
+    - id: 17
+      answer: Unfinished Portrait
+    - id: 18
+      answer: Why Didn’t They Ask Evans?
+    - id: 19
+      answer: Three Act Tragedy
+    - id: 20
+      answer: Death in the Clouds
+    - id: 21
+      answer: The A.B.C. Murders
+    - id: 22
+      answer: Murder in Mesopotamia
+    - id: 23
+      answer: Cards on the Table
+    - id: 24
+      answer: Dumb Witness
+    - id: 25
+      answer: Death on the Nile
+    - id: 26
+      answer: Appointment with Death
+    - id: 27
+      answer: Hercule Poirot’s Christmas
+    - id: 28
+      answer: Murder Is Easy
+    - id: 29
+      answer: And Then There Were None
+    - id: 30
+      answer: Sad Cypress
+    - id: 31
+      answer: One, Two, Buckle My Shoe
+    - id: 32
+      answer: Evil Under the Sun
+    - id: 33
+      answer: N or M?
+    - id: 34
+      answer: The Body in the Library
+    - id: 35
+      answer: Five Little Pigs
+    - id: 36
+      answer: The Moving Finger
+    - id: 37
+      answer: Towards Zero
+    - id: 38
+      answer: Absent in the Spring
+    - id: 39
+      answer: Death Comes as the End
+    - id: 40
+      answer: Sparkling Cyanide
+    - id: 41
+      answer: The Hollow
+    - id: 42
+      answer: Taken at the Flood
+    - id: 43
+      answer: The Rose and the Yew Tree
+    - id: 44
+      answer: Crooked House
+    - id: 45
+      answer: A Murder Is Announced
+    - id: 46
+      answer: They Came to Baghdad
+    - id: 47
+      answer: Mrs McGinty’s Dead
+    - id: 48
+      answer: They Do It with Mirrors
+    - id: 49
+      answer: A Daughter’s a Daughter
+    - id: 50
+      answer: After the Funeral
+    - id: 51
+      answer: A Pocket Full of Rye
+    - id: 52
+      answer: Destination Unknown
+    - id: 53
+      answer: Hickory Dickory Dock
+    - id: 54
+      answer: Dead Man’s Folly
+    - id: 55
+      answer: The Burden
+    - id: 56
+      answer: 4.50 from Paddington
+    - id: 57
+      answer: Ordeal by Innocence
+    - id: 58
+      answer: Cat Among the Pigeons
+    - id: 59
+      answer: The Pale Horse
+    - id: 60
+      answer: The Mirror Crack’d from Side to Side
+    - id: 61
+      answer: The Clocks
+    - id: 62
+      answer: A Caribbean Mystery
+    - id: 63
+      answer: At Bertram’s Hotel
+    - id: 64
+      answer: Third Girl
+    - id: 65
+      answer: Endless Night
+    - id: 66
+      answer: By the Pricking of My Thumbs
+    - id: 67
+      answer: Hallowe’en Party
+    - id: 68
+      answer: Passenger to Frankfurt
+    - id: 69
+      answer: Nemesis
+    - id: 70
+      answer: Postern of Fate
+    - id: 71
+      answer: Curtain
+    - id: 72
+      answer: Sleeping Murder
