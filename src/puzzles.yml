@@ -1017,7 +1017,7 @@
       clue: One who calculates loan repayments
       answer: 55
     - id: 23
-      clue: Ve n i c e
+      clue: V e n i c e
       answer: 27
     - id: 24
       clue: Mr Pratchett makes a mistake
@@ -1119,8 +1119,8 @@
       answer: 62
       description: SE + N + SE + 8
     - id: 50
-      clue: EN
-      answer:
+      clue: ᴱᴺ
+      answer: 18
       description: EN, lightened
   answers:
     - id: 1
@@ -1964,3 +1964,702 @@
       answer: Curtain
     - id: 72
       answer: Sleeping Murder
+
+2022:
+  year: 2022
+  title: Board games
+  description: |
+    The games below appear on Ranker.com’s list of the best board games.
+  color: "#6667AB"
+  clues:
+    - id: 1
+      clue: Nommag
+      answer: 24
+      description: ‘Nommag’ is ‘gammon’, backwards
+    - id: 2
+      clue: War’s cool!
+      answer: 9
+      description: Battle’s hip!
+      credit: Written by Kieran Boyd, who also definitely endorses the message of this clue
+    - id: 3
+      clue: Can’t he, Ada?
+      answer: 54
+      description: ‘The’ is in the middle of ‘Canada’
+    - id: 4
+      clue: Mandarin inspectors
+      answer: 39
+    - id: 5
+      clue: Both ends of county and country
+      answer: 29
+      description: The ends of ‘county’ are ‘C and y’, and country = ‘land’
+    - id: 6
+      clue: Lady Alice cameo at jazz gala
+      answer: 10
+      description: Lady Alice, Cameo, Jazz and Gala are all types of apples
+    - id: 7
+      clue: Girl disheartened after New Moon
+      answer: 2
+      description: Take the heart out of the feminine name ‘Polly’ to get ‘Poly’, and put it after a ‘new’ version of ‘moon’, which is ‘Mono’
+    - id: 8
+      clue: From catamaran A to. . .
+      answer: 13
+      description: Yacht Z
+    - id: 9
+      clue: A vocal ensemble
+      answer: 73
+      description: A choir
+      credit: Also by Kieran Boyd
+    - id: 10
+      clue: Repairing an organ in the theatre, for example?
+      answer: 66
+      description: THAT sort of organ and THAT sort of theatre.
+    - id: 11
+      clue: I’m up in d’chive
+      answer: 11
+      description: Send ‘IM’ upwards to get ‘Mi’, and put it inside of D’Onion (d’chive)
+    - id: 12
+      clue: Eclipse or New Moon?
+      answer: 34
+      description: This is the real Twilight one among all the decoys
+    - id: 13
+      clue: There’s carrion on South-West, and a...
+      answer: 19
+      description: Carcass on NE
+    - id: 14
+      clue: 501 + 11 (maths, essentially)
+      answer: 45
+      description: 501 = DI in Roman Numerals. 11 = XI. The centre of Maths is ‘T’
+    - id: 15
+      clue: Make odourless
+      answer: 57
+    - id: 16
+      clue: More brazen run
+      answer: 71
+    - id: 17
+      clue: Trunks with elephant’s tail missing
+      answer: 1
+      description: Chests (trunks) with the ‘tail’ of elephant (T) missing
+    - id: 18
+      clue: What replacement makes Lear leak?
+      answer: 4
+      description: To turn the word ‘Lear’ into the word ‘Leak’, you change the R into a K. So the replacement that makes this happen is ‘R is K’, which spells Risk. Possibly the most annoying clue I’ve written for one of these. You’re welcome!
+    - id: 19
+      clue: Do the limbo, Miss Gray!
+      answer: 56
+      description: Dip Low, Macy!
+    - id: 20
+      clue: Firearm for display purposes only
+      answer: 65
+      description: (It’s a show gun)
+    - id: 21
+      clue: Spread sex parties, where good head comes up
+      answer: 44
+      description: Scatter = spread. Sex parties = orgies, but G (the head of ‘good’) comes upwards in the word.
+    - id: 22
+      clue: Criticise half of 100
+      answer: 21
+      description: Criticise = Pan. Half = Demi. 100 = C
+    - id: 23
+      clue: First-rate golfer’s hidden secret
+      answer: 15
+      description: firST RATE Golfer
+    - id: 24
+      clue: Result of sunbathing in California
+      answer: 5
+      description: It’s a CA tan
+    - id: 25
+      clue: Breaking Dawn tries swag
+      answer: 59
+      description: An anagram (breaking) of ‘dawn tries swag’
+    - id: 26
+      clue: An adult return to space, for Sally
+      answer: 7
+      description: RIP to Sally Ride
+    - id: 27
+      clue: Muse, think, imagine, question, ponder, doubt, speculate
+      answer: 37
+    - id: 28
+      clue: One of fifty here
+      answer: 6
+      description: Just straight up what it says on the tin
+    - id: 29
+      clue: Not one of fifty, but still paying tax
+      answer: 12
+      description: ‘No taxation without representation’, yeah right
+    - id: 30
+      clue: Is it Whittaker or Gatwa?
+      answer: 50
+      description: I mean really it should be ‘Guess The Doctor’ but that’s not as fun.
+    - id: 31
+      clue: Noah, realising what he has to do with the pigs
+      answer: 25
+      description: Ark/Ham/Horror
+    - id: 32
+      clue: Hunting for three small jars
+      answer: 14
+      description: Tri-Vial Pursuit
+    - id: 33
+      clue: Turns on, ignoring the odds
+      answer: 8
+      description: If you ignore the odd letters of ‘turns on’, that gives you ‘_U_N_ O_’
+    - id: 34
+      clue: By way of stone, bronze and iron
+      answer: 67
+      description: Stone Age, Iron Age, Bronze Age
+    - id: 35
+      clue: Key nil-all score
+      answer: 55
+      description: ‘Tab’ is a key on your keyboard. A nil-all draw is 0-0. Tab0-0.
+    - id: 36
+      clue: Epergency call that says ‘Rescue pe!’
+      answer: 68
+      description: No, it’s not a typo. No, it doesn’t really make sense.
+    - id: 37
+      clue: No small talk
+      answer: 43
+      description: Don’t Break The Ice
+    - id: 38
+      clue: What comes before, after all
+      answer: 33
+      description: It’s a small world, after all
+    - id: 39
+      clue: Much Ado About Nothing villain
+      answer: 51
+      description: Don John. Dungeon. Repeat until they start to sound the same. Now keep talking in your new accent. (“HULLA, MA NAYM ES DUN JUN”)
+    - id: 40
+      clue: Extremely out greeting
+      answer: 52
+      description: Extremes of ‘OUT’ are O and T, a greeting is ‘hello’. I would also accept Hi Ho! Cherry-O, which would be a very out greeting as well.
+    - id: 41
+      clue: Minerva, hello! Bend me over and look inside!
+      answer: 72
+      description: "Reverse (bend over) ‘Minerva Hello’, then look inside it: ‘olLEH AVREnim’"
+    - id: 42
+      clue: White gum? Trim lip? I correct these
+      answer: 38
+      description: Anagram of ‘White gum trim lip I’
+    - id: 43
+      clue: Brown carpet with Jacob’s property step
+      answer: 62
+      description: Brown and carpet are both types of snake. ‘Jacob’s’, ‘property’ and ‘step’ can all come before ladder.
+    - id: 44
+      clue: Add what comes between twenty and seven
+      answer: 22
+      description: Add = Connect, four comes in the middle of the phrase ‘Twenty (Four) Seven’
+    - id: 45
+      clue: Cliff Richard’s band defeated Biblical husband
+      answer: 69
+      description: Cliff Richards and The Shadows defeated (overcame) Lot from The Bible.
+    - id: 46
+      clue: How to get kicked out of a Trappist monastery
+      answer: 47
+      description: I don’t believe they actually have vows of silence anymore, but I’m not here to spoil the fun.
+    - id: 47
+      clue: Archer star appears in periodical
+      answer: 46
+      description: H. Jon Benjamin is the star of Archer. Put ‘H Jon’ inside of ‘mag’ (magazine, periodical) to get maHJONg.
+    - id: 48
+      clue: What crazy people do with bananas
+      answer: 23
+      description: They go bananas.
+    - id: 49
+      clue: Sleep with the King of Crete
+      answer: 48
+      description: Do/Minos
+    - id: 50
+      clue: If you don’t like this year’s quiz
+      answer: 17
+      description: I tried to warn you.
+  answers:
+    - id: 1
+      answer: Chess
+    - id: 2
+      answer: Monopoly
+    - id: 3
+      answer: Scrabble
+    - id: 4
+      answer: Risk
+    - id: 5
+      answer: Catan
+    - id: 6
+      answer: Clue
+    - id: 7
+      answer: Ticket to Ride
+    - id: 8
+      answer: Uno
+    - id: 9
+      answer: Battleship
+    - id: 10
+      answer: Apples to Apples
+    - id: 11
+      answer: Dominion
+    - id: 12
+      answer: Puerto Rico
+    - id: 13
+      answer: Yahtzee
+    - id: 14
+      answer: Trivial Pursuit
+    - id: 15
+      answer: Stratego
+    - id: 16
+      answer: Checkers
+    - id: 17
+      answer: Sorry!
+    - id: 18
+      answer: Agricola
+    - id: 19
+      answer: Carcassonne
+    - id: 20
+      answer: Pictionary
+    - id: 21
+      answer: Pandemic
+    - id: 22
+      answer: Connect Four
+    - id: 23
+      answer: Go
+    - id: 24
+      answer: Backgammon
+    - id: 25
+      answer: Arkham Horror
+    - id: 26
+      answer: Axis and Allies
+    - id: 27
+      answer: Power Grid
+    - id: 28
+      answer: The Game of Life
+    - id: 29
+      answer: Candyland
+    - id: 30
+      answer: A Game of Thrones
+    - id: 31
+      answer: Battlestar Galactica
+    - id: 32
+      answer: Cosmic Encounter
+    - id: 33
+      answer: Small World
+    - id: 34
+      answer: Twilight Struggle
+    - id: 35
+      answer: Trouble
+    - id: 36
+      answer: Tigris and Euphrates
+    - id: 37
+      answer: 7 Wonders
+    - id: 38
+      answer: Twilight Imperium
+    - id: 39
+      answer: Chinese Checkers
+    - id: 40
+      answer: Mastermind
+    - id: 41
+      answer: Cranium
+    - id: 42
+      answer: El Grande
+    - id: 43
+      answer: Don’t Break The Ice
+    - id: 44
+      answer: Scattergories
+    - id: 45
+      answer: Dixit
+    - id: 46
+      answer: Mahjong
+    - id: 47
+      answer: Say Anything
+    - id: 48
+      answer: Dominos
+    - id: 49
+      answer: Dominant Species
+    - id: 50
+      answer: Guess Who?
+    - id: 51
+      answer: Dungeon
+    - id: 52
+      answer: Othello
+    - id: 53
+      answer: Mancala
+    - id: 54
+      answer: The Invasion of Canada
+    - id: 55
+      answer: Taboo
+    - id: 56
+      answer: Diplomacy
+    - id: 57
+      answer: Descent
+    - id: 58
+      answer: Hi Ho! Cherry-O
+    - id: 59
+      answer: Wits and Wagers
+    - id: 60
+      answer: Caylus
+    - id: 61
+      answer: Key to the Kingdom
+    - id: 62
+      answer: Snakes and Ladders
+    - id: 63
+      answer: Blood Bowl
+    - id: 64
+      answer: Uno Attack
+    - id: 65
+      answer: Shogun
+    - id: 66
+      answer: Operation
+    - id: 67
+      answer: Through the Ages
+    - id: 68
+      answer: Pay Day
+    - id: 69
+      answer: Shadows Over Camelot
+    - id: 70
+      answer: Alhambra
+    - id: 71
+      answer: Balderdash
+    - id: 72
+      answer: Le Havre
+    - id: 73
+      answer: Acquire
+    - id: 74
+      answer: Scotland Yard
+
+2023:
+  year: 2023
+  title: Terry Pratchet novels
+  description: |
+    A chronological list of books by Terry Pratchett
+  color: "#BB2649"
+  clues:
+    - id: 1
+      clue: Chappies that need nappies
+      answer: 43
+      description: Because they wee freely!
+    - id: 2
+      clue: The opposite of a sundial
+      answer: 41
+    - id: 3
+      clue: Fried rice
+      answer: 17
+      description: ‘Fried’ tells you it’s an anagram of ‘rice’
+    - id: 4
+      clue: A single roasted marshmallow
+      answer: 44
+      description: One s’more
+    - id: 5
+      clue: A dessert’s return
+      answer: 3
+      description: ‘Return’ tells you to send ‘A Tarts’ backwards
+    - id: 6
+      clue: Jackie Robinson, for example
+      answer: 58
+      description: He played for the Brooklyn Dodgers (and was the first Black American to play in Major League Baseball)
+    - id: 7
+      clue: Pressing the flesh (well, bones)
+      answer: 66
+    - id: 8
+      clue: Absorbing paper
+      answer: 28
+      description: Interesting = Absorbing, The Times is a newspaper
+    - id: 9
+      clue: St George Illawarra keep falling apart
+      answer: 61
+      description: The St George Illawarra Dragons are an Australian NRL team. A keep that’s falling apart is a crumbling castle.
+    - id: 10
+      clue: Find Mr. Chrles
+      answer: 9
+      description: Source R(a)y Ch(a)rles
+    - id: 11
+      clue: Aye, embrace? Or...
+      answer: 51
+      description: Nay, shun
+    - id: 12
+      clue: Pie crust
+      answer: 14
+      description: This is one where the answer is actually the clue. ‘Move’ the letters in ‘pictures’ to get ‘pie crust’
+    - id: 13
+      clue: Getting dough, bacon or cheddar
+      answer: 50
+      description: All food-based slang terms for earning money.
+    - id: 14
+      clue: Sample from DJ in Goldfrapp
+      answer: 33
+      description: The letters are inside (a sample from) ‘dJ IN GOldfrapp’. Everyone remembers Goldfrapp, right? This is a relevant musical reference.
+    - id: 15
+      clue: Henchmen receive head
+      answer: 18
+      description: Put ‘dome’ (head) inside ‘goons’ (henchmen)
+    - id: 16
+      clue: Yet, I
+      answer: 63
+      description: Simply take out the comma!
+    - id: 17
+      clue: Under Americanization, get ‘dudes’, ‘math’, ‘cashed’. Confused?
+      answer: 40
+      description: ‘Confused’ lets you know to make an anagram of everything else. At this point you can assume that each year I’m going to find the longest answer and find an anagram of it. I will not be stopped.
+    - id: 18
+      clue: Ronald, replace good leader with curls
+      answer: 19
+      description: Ronald = Reagan. Replace ‘g’ (the leader of good) with ‘perm’ (curls). Probably the fiddliest clue in this year’s quiz.
+    - id: 19
+      clue: Who makes centre of centimetre?
+      answer: 39
+      description: Somebody stole ‘time’ from the word cen(time)tre
+    - id: 20
+      clue: It’s a loss to Jones and a...
+      answer: 49
+      description: Win to Smith
+    - id: 21
+      clue: Nine leapers and ten dancers
+      answer: 22
+      description: Ten ladies dancing, nine lords a’leaping.
+      credit: Thank you to Elaine and Kieran for suggesting and refining this clue, respectively.
+    - id: 22
+      clue: Cyberbully in the middle of a song
+      answer: 24
+    - id: 23
+      clue: Terrible Kray brother intended
+      answer: 42
+      description: Terrible = Monstrous, Reggie Kray, Intended = meant
+    - id: 24
+      clue: One end of manuscript
+      answer: 7
+      description: The end of the word ‘manuscript’ could be M or it could be T.
+    - id: 25
+      clue: Peeing after Gore
+      answer: 45
+      description: Going post-AL
+    - id: 26
+      clue: ғʟᴏʀᴀ, ᴅɪᴀɴᴀ ᴀɴᴅ ᴍɪɴᴇʀᴠᴀ
+      answer: 21
+      description: They’re all gods, but in small text.
+    - id: 27
+      clue: The staff of pale fruit soda
+      answer: 5
+      description: The Light Fanta Stick.
+      credit: Thanks to Kieran and Jen for helping refine this idea.
+    - id: 28
+      clue: Maets
+      answer: 60
+      description: Raise the letters of ‘steam’ to send it backwards
+    - id: 29
+      clue: They can be great, human, or food
+      answer: 13
+      description: Great pyramid, human pyramid, food pyramid
+    - id: 30
+      clue: Hide ‘er help
+      answer: 29
+      description: Mask her aid
+    - id: 31
+      clue: Cccrrrriiiimmmmmeeeaaaannnn
+      answer: 59
+    - id: 32
+      clue: The backs of the cards are brown with five dots
+      answer: 4
+      description: A reference to the cards in Magic The Gathering
+    - id: 33
+      clue: A guide to Carrie
+      answer: 64
+      description: Carrie Bradshaw from Sex And The City, of course.
+    - id: 34
+      clue: Nine accuse a damsel in distress
+      answer: 52
+      description: The letters of ‘nine accuse a damsel’ are put in distress (ie. anagrammed)
+    - id: 35
+      clue: In symbolism, rat an’ emu walk backwards
+      answer: 26
+      description: Look backwards in the letters of symbolisM RAT AN EMu
+    - id: 36
+      clue: Sorcières or Hexen
+      answer: 20
+      description: The French and German words for Witches, respectively
+    - id: 37
+      clue: Sign of one who’s baa-king
+      answer: 67
+    - id: 38
+      clue: The previous person acting opposite Claudio
+      answer: 38
+      description: The previous/last Hero (from Much Ado About Nothing)
+    - id: 39
+      clue: Reorganise polite hangout
+      answer: 65
+      description: ‘Reorganise’ indicates an ana- gram
+    - id: 40
+      clue: Instead of the wide picnic, I want...
+      answer: 62
+      description: The chocolate bar, y’know?
+    - id: 41
+      clue: Kiwi pranksters
+      answer: 10
+      description: Trickers, but in a Kiwi accent. My apologies to the entire nation of Aotearoa.
+    - id: 42
+      clue: GWS
+      answer: 15
+      description: Put W in GS
+    - id: 43
+      clue: Short swords that have A.I. switch
+      answer: 16
+      description: Daggers, switch ‘a’ for ‘i’
+    - id: 44
+      clue: Condom with a stiffy
+      answer: 25
+      description: ‘Johnny’ is a slang term for a condom. A stiff is a slang term for a corpse. I may have editorialised somewhat in the name of being scandalous.
+    - id: 45
+      clue: Ethel on gear that’s hidden
+      answer: 57
+      description: The answer is hidden in eTHEL ON GEAR THat
+    - id: 46
+      clue: Aiken (trochee), Pigeon (trochee), and Cassius (dactyl)
+      answer: 31
+      description: Trochee and dactyl are the metrical feet of these words that come next to Clay (Clay Aiken, Clay Pigeon, Cassius Clay). Apologies for showing feet on main
+      credit: Thank you to Matt and Penny for some fact-checking on this one.
+    - id: 47
+      clue: Those with a dog in the back seat
+      answer: 1
+      description: The car pet people
+    - id: 48
+      clue: Thoap bubble
+      answer: 47
+    - id: 49
+      clue: Peppa’s dad
+      answer: 30
+      description: As in Peppa Pig
+    - id: 50
+      clue: ’Splenty
+      answer: 54
+      description: As in, that’s ’snuff questions for this year.
+  answers:
+    - id: 1
+      answer: The Carpet People
+    - id: 2
+      answer: The Dark Side of the Sun
+    - id: 3
+      answer: Strata
+    - id: 4
+      answer: The Colour of Magic
+    - id: 5
+      answer: The Light Fantastic
+    - id: 6
+      answer: Equal Rites
+    - id: 7
+      answer: Mort
+    - id: 8
+      answer: Wyrd Sisters
+    - id: 9
+      answer: Sourcery
+    - id: 10
+      answer: Truckers
+    - id: 11
+      answer: The Unadulterated Cat
+    - id: 12
+      answer: Guards! Guards!
+    - id: 13
+      answer: Pyramids
+    - id: 14
+      answer: Moving Pictures
+    - id: 15
+      answer: Wings
+    - id: 16
+      answer: Diggers
+    - id: 17
+      answer: Eric
+    - id: 18
+      answer: Good Omens
+    - id: 19
+      answer: Reaper Man
+    - id: 20
+      answer: Witches Abroad
+    - id: 21
+      answer: Small Gods
+    - id: 22
+      answer: Lords and Ladies
+    - id: 23
+      answer: Only You Can Save Mankind
+    - id: 24
+      answer: Troll Bridge
+    - id: 25
+      answer: Johnny and the Dead
+    - id: 26
+      answer: Men at Arms
+    - id: 27
+      answer: Soul Music
+    - id: 28
+      answer: Interesting Times
+    - id: 29
+      answer: Maskerade
+    - id: 30
+      answer: Hogfather
+    - id: 31
+      answer: Feet of Clay
+    - id: 32
+      answer: Johnny and the Bomb
+    - id: 33
+      answer: Jingo
+    - id: 34
+      answer: The Last Continent
+    - id: 35
+      answer: Carpe Jugulum
+    - id: 36
+      answer: The Fifth Elephant
+    - id: 37
+      answer: The Truth
+    - id: 38
+      answer: The Last Hero
+    - id: 39
+      answer: Thief of Time
+    - id: 40
+      answer: The Amazing Maurice and His Educated Rodents
+    - id: 41
+      answer: Night Watch
+    - id: 42
+      answer: Monstrous Regiment
+    - id: 43
+      answer: The Wee Free Men
+    - id: 44
+      answer: Once More
+    - id: 45
+      answer: Going Postal
+    - id: 46
+      answer: A Hat Full of Sky
+    - id: 47
+      answer: Thud
+    - id: 48
+      answer: Where’s My Cow?
+    - id: 49
+      answer: Wintersmith
+    - id: 50
+      answer: Making Money
+    - id: 51
+      answer: Nation
+    - id: 52
+      answer: Unseen Academicals
+    - id: 53
+      answer: I Shall Wear Midnight
+    - id: 54
+      answer: Snuff
+    - id: 55
+      answer: A Blink of the Screen
+    - id: 56
+      answer: The World of Poo
+    - id: 57
+      answer: The Long Earth
+    - id: 58
+      answer: Dodger
+    - id: 59
+      answer: The Long War
+    - id: 60
+      answer: Raising Steam
+    - id: 61
+      answer: Dragons at Crumbling Castle
+    - id: 62
+      answer: The Long Mars
+    - id: 63
+      answer: The Abominable Snowman
+    - id: 64
+      answer: Mrs Bradshaw’s Handbook
+    - id: 65
+      answer: The Long Utopia
+    - id: 66
+      answer: Shaking Hands With Death
+    - id: 67
+      answer: The Shepherd’s Crown
+    - id: 68
+      answer: The Long Cosmos
+    - id: 69
+      answer: Father Christmas’s Fake Beard
