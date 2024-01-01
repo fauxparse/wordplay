@@ -2686,9 +2686,9 @@ arnie:
       answer: 25
       description: ‘Jingle’ is a hint for an anagram
     - id: 4
-      clue: Looking for Hawkeye in South Carolina
+      clue: Looking for Captain America in South Carolina
       answer: 6
-      description: Hawkeye is the worst Avenger, SC is South Carolina
+      description: Captain America is an Avenger, SC is South Carolina
     - id: 5
       clue: Confusion, i.e. result
       answer: 22
@@ -2745,11 +2745,10 @@ arnie:
       answer: 15
       description: T wins
     - id: 19
-      clue: How about to the left of F1?
-      answer: 38
-      description: Figuring out keyboard layouts
+      clue: Mr Poirot is across the Atlantic
+      answer: 1
     - id: 20
-      clue: Y Y Y Y Y Y Y Y
+      clue: Y Y Y Y Y Y Y
       answer: 27
       description: This clue could be more interesting in another language
     - id: 21
@@ -2764,9 +2763,9 @@ arnie:
       answer: 3
       description: The word ‘Stay’, but it’s hungry
     - id: 24
-      clue: John Brancato, Michael Ferris, and especially James Haygood
-      answer: 46
-      description: The writers and editor of the David Fincher film “The Game”
+      clue: How about to the left of F1?
+      answer: 38
+      description: Figuring out keyboard layouts
     - id: 25
       clue: As far as the light reaches
       answer: 8
