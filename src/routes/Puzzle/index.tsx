@@ -154,7 +154,7 @@ const Puzzle: React.FC = () => {
             fontWeight="normal"
             color="text.secondary"
           >
-            {puzzle.year}
+            {puzzle.author || puzzle.year}
           </Text>
           <Heading as="h1" size="3xl" color="var(--highlight-color)">
             {puzzle.title}

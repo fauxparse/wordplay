@@ -2663,3 +2663,210 @@
       answer: The Long Cosmos
     - id: 69
       answer: Father Christmas’s Fake Beard
+
+arnie:
+  year: arnie
+  title: Arnold Schwarzenegger films
+  guest: true
+  author: Matt Powell
+  description: |
+    A chronological list of films starring Arnold Schwarzenegger
+  color: "#616C38"
+  clues:
+    - id: 1
+      clue: Het
+      answer: 32
+      description: The word ‘the’, but run down
+    - id: 2
+      clue: Teach me how to Dougie, and I’ll teach you…
+      answer: 13
+      description: Two dance moves
+    - id: 3
+      clue: LA wealthy
+      answer: 25
+      description: ‘Jingle’ is a hint for an anagram
+    - id: 4
+      clue: Looking for Hawkeye in South Carolina
+      answer: 6
+      description: Hawkeye is the worst Avenger, SC is South Carolina
+    - id: 5
+      clue: Confusion, i.e. result
+      answer: 22
+      description: An anagram of ‘i.e. result’
+    - id: 6
+      clue: “I’m in my ‘Eras’ era!”
+      answer: 24
+      description: The word ‘eraser’ is hidden inside the phrase ‘my eras era’
+    - id: 7
+      clue: Rejected Friends plot
+      answer: 45
+      description: I assume, I haven't watched every episode.
+    - id: 8
+      clue: Letting off steam
+      answer: 4
+      description: It’s what the button on your iron is for (not to be confused with the excellent death scene in Commando)
+    - id: 9
+      clue: Second period social studies
+      answer: 43
+    - id: 10
+      clue: Before the next generation android
+      answer: 12
+      description: Pre-Data
+    - id: 11
+      clue: First handwritten drafts of Xzibit lyrics
+      answer: 35
+      description: The X pen dabbles
+    - id: 12
+      clue: What Nick Frost said to Simon Pegg
+      answer: 9
+      description: Actually it was “You’ve got red on you”, but close enough
+    - id: 13
+      clue: Tall Carole
+      answer: 30
+      description: A reverse anagram
+    - id: 14
+      clue: Heartless religious leader at the heart of one more knowledgeable
+      answer: 39
+      description: S(AB(B)OT)AGE
+    - id: 15
+      clue: Mart Crowe
+      answer: 26
+      description: Martin Crowe was a high-scoring New Zealand cricketer; take away (rob) the ‘in’
+    - id: 16
+      clue: “Don,” he slurred
+      answer: 10
+      description: It’s an anagram, but you have to include COMMA
+    - id: 17
+      clue: Miss May
+      answer: 41
+      description: As in the Rod Stewart song
+    - id: 18
+      clue: The truth will out
+      answer: 15
+      description: T wins
+    - id: 19
+      clue: How about to the left of F1?
+      answer: 38
+      description: Figuring out keyboard layouts
+    - id: 20
+      clue: Y Y Y Y Y Y Y Y
+      answer: 27
+      description: This clue could be more interesting in another language
+    - id: 21
+      clue: Costlier if cooked
+      answer: 11
+    - id: 22
+      clue: Man injured in escape attempt
+      answer: 19
+      description: Someone attempted to write the word ‘evade’, but left off the last letter
+    - id: 23
+      clue: Sy
+      answer: 3
+      description: The word ‘Stay’, but it’s hungry
+    - id: 24
+      clue: John Brancato, Michael Ferris, and especially James Haygood
+      answer: 46
+      description: The writers and editor of the David Fincher film “The Game”
+    - id: 25
+      clue: As far as the light reaches
+      answer: 8
+      description: The Terminator is the edge of the lit part of the earth
+  answers:
+    - id: 1
+      answer: Hercules in New York
+    - id: 2
+      answer: The Long Goodbye
+    - id: 3
+      answer: Stay Hungry
+    - id: 4
+      answer: Pumping Iron
+    - id: 5
+      answer: The Villain
+    - id: 6
+      answer: Scavenger Hunt
+    - id: 7
+      answer: Conan the Barbarian
+    - id: 8
+      answer: The Terminator
+    - id: 9
+      answer: Red Sonja
+    - id: 10
+      answer: Commando
+    - id: 11
+      answer: Raw Deal
+    - id: 12
+      answer: Predator
+    - id: 13
+      answer: The Running Man
+    - id: 14
+      answer: Red Heat
+    - id: 15
+      answer: Twins
+    - id: 16
+      answer: Total Recall
+    - id: 17
+      answer: Kindergarten Cop
+    - id: 18
+      answer: "Terminator 2: Judgment Day"
+    - id: 19
+      answer: Dave
+    - id: 20
+      answer: Last Action Hero
+    - id: 21
+      answer: Beretta’s Island
+    - id: 22
+      answer: True Lies
+    - id: 23
+      answer: Junior
+    - id: 24
+      answer: Eraser
+    - id: 25
+      answer: Jingle All The Way
+    - id: 26
+      answer: Batman & Robin
+    - id: 27
+      answer: End of Days
+    - id: 28
+      answer: The Sixth Day
+    - id: 29
+      answer: Dr Dolittle 2
+    - id: 30
+      answer: Collateral Damage
+    - id: 31
+      answer: "Terminator 3: Rise of the Machines"
+    - id: 32
+      answer: The Rundown
+    - id: 33
+      answer: Around the World in 80 Days
+    - id: 34
+      answer: The Kid & I
+    - id: 35
+      answer: The Expendables
+    - id: 36
+      answer: The Expendables 2
+    - id: 37
+      answer: The Last Stand
+    - id: 38
+      answer: Escape Plan
+    - id: 39
+      answer: Sabotage
+    - id: 40
+      answer: The Expendables 3
+    - id: 41
+      answer: Maggie
+    - id: 42
+      answer: Terminator Genisys
+    - id: 43
+      answer: Aftermath
+    - id: 44
+      answer: Wonders of the Sea 3D
+    - id: 45
+      answer: Killing Gunther
+    - id: 46
+      answer: The Game Changers
+    - id: 47
+      answer: "Viy 2: Journey to China"
+    - id: 48
+      answer: "Terminator: Dark Fate"
+    - id: 49
+      answer: Kung Fury 2

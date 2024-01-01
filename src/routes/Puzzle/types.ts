@@ -5,7 +5,7 @@ export type Puzzle = {
   color: string;
   clues: Clue[];
   answers: Answer[];
-};
+} & ({ guest: never } | { guest: true; author: string });
 
 export type Clue = {
   id: number;
